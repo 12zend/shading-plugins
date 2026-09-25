@@ -1,0 +1,512 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "color-adjust",
+  "name": "Color Adjust",
+  "blocks": [
+    {
+      "id": "contrast",
+      "name": "contrast",
+      "text": "contrast value: [VALUE] pivot: [PIVOT] mix: [MIX] %",
+      "opcode": "contrast",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "contrast"
+      },
+      "inputs": [
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "PIVOT",
+          "label": "pivot",
+          "type": "number",
+          "defaultValue": 0.5
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "brightness",
+      "name": "brightness",
+      "text": "brightness color: [COLOR] value: [VALUE] mix: [MIX] %",
+      "opcode": "brightness",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "brightness"
+      },
+      "inputs": [
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#101010"
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "gamma",
+      "name": "gamma",
+      "text": "gamma value: [VALUE] mix: [MIX] %",
+      "opcode": "gamma",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "gamma"
+      },
+      "inputs": [
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "saturation",
+      "name": "saturation",
+      "text": "saturation value: [VALUE] mix: [MIX] %",
+      "opcode": "saturation",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "saturation"
+      },
+      "inputs": [
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "alpha",
+      "name": "alpha",
+      "text": "alpha [VALUE] % mix: [MIX] %",
+      "opcode": "alpha",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "alpha"
+      },
+      "inputs": [
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "color-blindness",
+      "name": "colorBlindness",
+      "text": "color blindness [TYPE] severity: [SEVERITY] % mix: [MIX] %",
+      "opcode": "colorBlindness",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "colorBlindness"
+      },
+      "inputs": [
+        {
+          "id": "TYPE",
+          "label": "type",
+          "type": "menu",
+          "items": [
+            "deuteranopia",
+            "protanopia",
+            "tritanopia"
+          ],
+          "defaultValue": "deuteranopia"
+        },
+        {
+          "id": "SEVERITY",
+          "label": "severity",
+          "type": "number",
+          "defaultValue": 50
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "color-space-adjust",
+      "name": "colorSpaceAdjust",
+      "text": "HSL adjust hue add: [HADD] mul: [HMUL] saturation add: [SADD] mul: [SMUL] lightness add: [LADD] mul: [LMUL] mix: [MIX] %",
+      "opcode": "colorSpaceAdjust",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "colorSpaceAdjust"
+      },
+      "inputs": [
+        {
+          "id": "HADD",
+          "label": "hadd",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "HMUL",
+          "label": "hmul",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "SADD",
+          "label": "sadd",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "SMUL",
+          "label": "smul",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "LADD",
+          "label": "ladd",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "LMUL",
+          "label": "lmul",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "tone-map",
+      "name": "toneMap",
+      "text": "tone map [TYPE] exposure: [EXPOSURE] white point: [WHITE] mix: [MIX] %",
+      "opcode": "toneMap",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "toneMap"
+      },
+      "inputs": [
+        {
+          "id": "TYPE",
+          "label": "type",
+          "type": "menu",
+          "items": [
+            "clamp",
+            "aces hill",
+            "aces",
+            "reinhard"
+          ],
+          "defaultValue": "clamp"
+        },
+        {
+          "id": "EXPOSURE",
+          "label": "exposure",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "WHITE",
+          "label": "white",
+          "type": "number",
+          "defaultValue": 4
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "auto-exposure",
+      "name": "autoExposure",
+      "text": "auto exposure target: [TARGET] min: [MIN] max: [MAX] mix: [MIX] %",
+      "opcode": "autoExposure",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "autoExposure"
+      },
+      "inputs": [
+        {
+          "id": "TARGET",
+          "label": "target",
+          "type": "number",
+          "defaultValue": 0.18
+        },
+        {
+          "id": "MIN",
+          "label": "min",
+          "type": "number",
+          "defaultValue": 0.25
+        },
+        {
+          "id": "MAX",
+          "label": "max",
+          "type": "number",
+          "defaultValue": 4
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "palette-swap",
+      "name": "paletteSwap",
+      "text": "palette map shadows: [C1] [C2] [C3] highlights: [C4] mix: [MIX] %",
+      "opcode": "paletteSwap",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "paletteSwap"
+      },
+      "inputs": [
+        {
+          "id": "C1",
+          "label": "c1",
+          "type": "color",
+          "defaultValue": "#0b1026"
+        },
+        {
+          "id": "C2",
+          "label": "c2",
+          "type": "color",
+          "defaultValue": "#3b426e"
+        },
+        {
+          "id": "C3",
+          "label": "c3",
+          "type": "color",
+          "defaultValue": "#8a6f7d"
+        },
+        {
+          "id": "C4",
+          "label": "c4",
+          "type": "color",
+          "defaultValue": "#f6d6bd"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "chroma-key",
+      "name": "chromaKey",
+      "text": "chroma key: [KEY] tolerance: [TOLERANCE] softness: [SOFTNESS] use [BEHAVIOR] colors: [COLOR1] [COLOR2] mix: [MIX] %",
+      "opcode": "chromaKey",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "chromaKey"
+      },
+      "inputs": [
+        {
+          "id": "KEY",
+          "label": "key",
+          "type": "color",
+          "defaultValue": "#00ff00"
+        },
+        {
+          "id": "TOLERANCE",
+          "label": "tolerance",
+          "type": "number",
+          "defaultValue": 0.1
+        },
+        {
+          "id": "SOFTNESS",
+          "label": "softness",
+          "type": "number",
+          "defaultValue": 0.05
+        },
+        {
+          "id": "BEHAVIOR",
+          "label": "behavior",
+          "type": "menu",
+          "items": [
+            "solid",
+            "gradient",
+            "transparent"
+          ],
+          "defaultValue": "solid"
+        },
+        {
+          "id": "COLOR1",
+          "label": "color1",
+          "type": "color",
+          "defaultValue": "#000000"
+        },
+        {
+          "id": "COLOR2",
+          "label": "color2",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "color-overlay",
+      "name": "colorOverlay",
+      "text": "color overlay [COLOR] mix: [MIX] %",
+      "opcode": "colorOverlay",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "colorOverlay"
+      },
+      "inputs": [
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "gradation-overlay",
+      "name": "gradationOverlay",
+      "text": "gradation overlay [GRADIENT] dir: [DIR] mix: [MIX] %",
+      "opcode": "gradationOverlay",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "gradationOverlay"
+      },
+      "inputs": [
+        {
+          "id": "GRADIENT",
+          "label": "gradient",
+          "type": "string",
+          "defaultValue": "{\"stops\":[{\"color\":\"#000000\",\"position\":0},{\"color\":\"#ffffff\",\"position\":1}]}"
+        },
+        {
+          "id": "DIR",
+          "label": "dir",
+          "type": "angle",
+          "defaultValue": 90
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "color-adjustment",
+      "name": "colorAdjustment",
+      "text": "color adjustment add: [ADD] mul: [MUL] div: [DIV] mix: [MIX] %",
+      "opcode": "colorAdjustment",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "colorAdjustment"
+      },
+      "inputs": [
+        {
+          "id": "ADD",
+          "label": "add",
+          "type": "color",
+          "defaultValue": "#000000"
+        },
+        {
+          "id": "MUL",
+          "label": "mul",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "DIV",
+          "label": "div",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    }
+  ]
+}

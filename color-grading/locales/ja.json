@@ -1,0 +1,16 @@
+{
+  "color-grade": {
+    "name": "カラーグレード",
+    "text": "カラーグレード 露出: [EXPOSURE] 色温度: [TEMP] 色かぶり: [TINT] コントラスト: [CONTRAST] 基準: [PIVOT] フィルター: [COLOR] 彩度: [SATURATION] 混合: [MIX] %",
+    "labels": {
+      "EXPOSURE": "露出",
+      "TEMP": "色温度",
+      "TINT": "色かぶり",
+      "CONTRAST": "コントラスト",
+      "PIVOT": "基準",
+      "COLOR": "色",
+      "SATURATION": "彩度",
+      "MIX": "混合"
+    }
+  }
+}

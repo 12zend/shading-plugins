@@ -1,0 +1,137 @@
+{
+  "contrast": {
+    "name": "コントラスト",
+    "text": "コントラスト 値: [VALUE] 基準: [PIVOT] 混合: [MIX] %",
+    "labels": {
+      "VALUE": "値",
+      "PIVOT": "基準",
+      "MIX": "混合"
+    }
+  },
+  "brightness": {
+    "name": "明るさ",
+    "text": "明るさ 色: [COLOR] 値: [VALUE] 混合: [MIX] %",
+    "labels": {
+      "COLOR": "色",
+      "VALUE": "値",
+      "MIX": "混合"
+    }
+  },
+  "gamma": {
+    "name": "ガンマ",
+    "text": "ガンマ 値: [VALUE] 混合: [MIX] %",
+    "labels": {
+      "VALUE": "値",
+      "MIX": "混合"
+    }
+  },
+  "saturation": {
+    "name": "彩度",
+    "text": "彩度 値: [VALUE] 混合: [MIX] %",
+    "labels": {
+      "VALUE": "値",
+      "MIX": "混合"
+    }
+  },
+  "alpha": {
+    "name": "透明度",
+    "text": "透明度 [VALUE] % 混合: [MIX] %",
+    "labels": {
+      "VALUE": "値",
+      "MIX": "混合"
+    }
+  },
+  "color-blindness": {
+    "name": "色覚サポート",
+    "text": "色覚サポート [TYPE] 強さ: [SEVERITY] % 混合: [MIX] %",
+    "labels": {
+      "TYPE": "種類",
+      "SEVERITY": "強さ",
+      "MIX": "混合"
+    }
+  },
+  "color-space-adjust": {
+    "name": "HSL調整",
+    "text": "HSL調整 色相加算: [HADD] 乗算: [HMUL] 彩度加算: [SADD] 乗算: [SMUL] 明度加算: [LADD] 乗算: [LMUL] 混合: [MIX] %",
+    "labels": {
+      "HADD": "色相加算",
+      "HMUL": "色相乗算",
+      "SADD": "彩度加算",
+      "SMUL": "彩度乗算",
+      "LADD": "明度加算",
+      "LMUL": "明度乗算",
+      "MIX": "混合"
+    }
+  },
+  "tone-map": {
+    "name": "トーンマップ",
+    "text": "トーンマップ [TYPE] 露出: [EXPOSURE] ホワイトポイント: [WHITE] 混合: [MIX] %",
+    "labels": {
+      "TYPE": "種類",
+      "EXPOSURE": "露出",
+      "WHITE": "ホワイトポイント",
+      "MIX": "混合"
+    }
+  },
+  "auto-exposure": {
+    "name": "自動露出",
+    "text": "自動露出 目標: [TARGET] 最小: [MIN] 最大: [MAX] 混合: [MIX] %",
+    "labels": {
+      "TARGET": "目標",
+      "MIN": "最小",
+      "MAX": "最大",
+      "MIX": "混合"
+    }
+  },
+  "palette-swap": {
+    "name": "パレット変換",
+    "text": "パレット変換 影: [C1] [C2] [C3] ハイライト: [C4] 混合: [MIX] %",
+    "labels": {
+      "C1": "影1",
+      "C2": "影2",
+      "C3": "影3",
+      "C4": "ハイライト",
+      "MIX": "混合"
+    }
+  },
+  "chroma-key": {
+    "name": "クロマキー",
+    "text": "クロマキー: [KEY] 許容: [TOLERANCE] 柔らかさ: [SOFTNESS] [BEHAVIOR] 色: [COLOR1] [COLOR2] 混合: [MIX] %",
+    "labels": {
+      "KEY": "キー",
+      "TOLERANCE": "許容",
+      "SOFTNESS": "柔らかさ",
+      "BEHAVIOR": "動作",
+      "COLOR1": "色1",
+      "COLOR2": "色2",
+      "MIX": "混合"
+    }
+  },
+  "color-overlay": {
+    "name": "カラーオーバーレイ",
+    "text": "カラーオーバーレイ [COLOR] 混合: [MIX] %",
+    "labels": {
+      "COLOR": "色",
+      "MIX": "混合"
+    }
+  },
+  "gradation-overlay": {
+    "name": "グラデーションオーバーレイ",
+    "text": "グラデーションオーバーレイ [GRADIENT] 向き: [DIR] 混合: [MIX] %",
+    "labels": {
+      "GRADIENT": "グラデーション",
+      "DIR": "向き",
+      "MIX": "混合"
+    }
+  },
+  "color-adjustment": {
+    "name": "色調整",
+    "text": "色調整 加算: [ADD] 乗算: [MUL] 除算: [DIV] 混合: [MIX] %",
+    "labels": {
+      "ADD": "加算",
+      "MUL": "乗算",
+      "DIV": "除算",
+      "MIX": "混合"
+    }
+  }
+}

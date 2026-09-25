@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "color-adjust",
+  "name": "Color Adjust",
+  "version": "1.0.0",
+  "description": "Contrast, brightness, saturation, overlays and other per-pixel color controls.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "色調補正",
+      "description": "コントラスト・明るさ・彩度・オーバーレイなどの色調整ブロック。"
+    }
+  }
+}

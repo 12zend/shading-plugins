@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "lut",
+  "name": "LUT",
+  "version": "1.0.0",
+  "description": "Apply 3D lookup tables imported as PNG images, with a LUT tab for managing them.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "LUT",
+      "description": "PNG画像のLUTを適用するブロックと、LUTを管理するLUTタブ。"
+    }
+  }
+}

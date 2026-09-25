@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "blob-tracking",
+  "name": "Blob Tracking",
+  "version": "1.0.0",
+  "description": "Detect bright, dark, colored or moving regions and draw tracking overlays.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "ブロブ検出",
+      "description": "明るい・暗い・色・動きのある領域を検出して追跡枠を描画。"
+    }
+  }
+}

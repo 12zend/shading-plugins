@@ -1,0 +1,28 @@
+{
+  "stack-current-drawing": {
+    "name": "描画を重ねる",
+    "text": "描画を重ねる 重み: [WEIGHT] 最大: [LIMIT]",
+    "labels": {
+      "WEIGHT": "重み",
+      "LIMIT": "最大"
+    }
+  },
+  "render-buffer-stack": {
+    "name": "重ねを表示",
+    "text": "重ねた描画を [MODE] で表示 消去: [CLEAR]",
+    "labels": {
+      "MODE": "モード",
+      "CLEAR": "消去"
+    }
+  },
+  "clear-buffer-stack": {
+    "name": "重ねを消去",
+    "text": "重ねを消去",
+    "labels": {}
+  },
+  "buffer-stack-size": {
+    "name": "重ねの数",
+    "text": "重ねの数",
+    "labels": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "easy",
+  "name": "Easy Looks",
+  "version": "1.0.0",
+  "description": "One-click glow, blur, lens, art, retro, distort and detail looks with thumbnail previews.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "recommends": ["glow", "blur", "lens", "stylize", "film", "distort", "pixel-sort", "color-adjust", "genshade"],
+  "locales": {
+    "ja": {
+      "name": "かんたんルック",
+      "description": "グロー・ぼかし・レンズ・アート・レトロ・ゆがみ・シャープのワンクリックルック（サムネイル付き）。"
+    }
+  }
+}

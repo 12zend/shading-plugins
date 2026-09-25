@@ -1,0 +1,92 @@
+{
+  "rgb-shift": {
+    "name": "RGBシフト",
+    "text": "RGBシフト 向き: [DIR] 値: [VALUE] 色: [COLOR] 混合: [MIX] %",
+    "labels": {
+      "DIR": "向き",
+      "VALUE": "値",
+      "COLOR": "色",
+      "MIX": "混合"
+    }
+  },
+  "film-grain": {
+    "name": "フィルムグレイン",
+    "text": "フィルムグレイン 強さ: [INTENSITY] 応答: [RESPONSE] 粒の大きさ: [SIZE] アニメ: [ANIMATE] 混合: [MIX] %",
+    "labels": {
+      "INTENSITY": "強さ",
+      "RESPONSE": "応答",
+      "SIZE": "大きさ",
+      "ANIMATE": "アニメ",
+      "MIX": "混合"
+    }
+  },
+  "dither": {
+    "name": "ディザ",
+    "text": "ディザ 色 r: [R] g: [G] b: [B] 拡散: [SPREAD] スケール: [SCALE] 混合: [MIX] %",
+    "labels": {
+      "R": "r",
+      "G": "g",
+      "B": "b",
+      "SPREAD": "拡散",
+      "SCALE": "スケール",
+      "MIX": "混合"
+    }
+  },
+  "halftone": {
+    "name": "ハーフトーン",
+    "text": "ハーフトーン 大きさ: [SIZE] 混合: [MIX] %",
+    "labels": {
+      "SIZE": "大きさ",
+      "MIX": "混合"
+    }
+  },
+  "ascii": {
+    "name": "アスキーアート",
+    "text": "アスキーアート セル x: [X] y: [Y] 前景: [FG] 背景: [BG] 反転: [INVERT] 混合: [MIX] %",
+    "labels": {
+      "X": "x",
+      "Y": "y",
+      "FG": "前景",
+      "BG": "背景",
+      "INVERT": "反転",
+      "MIX": "混合"
+    }
+  },
+  "crt": {
+    "name": "ブラウン管",
+    "text": "ブラウン管 カーブ: [CURVATURE] 枠: [BORDER] 走査線の大きさ: [SIZE] 強さ: [STRENGTH] 混合: [MIX] %",
+    "labels": {
+      "CURVATURE": "カーブ",
+      "BORDER": "枠",
+      "SIZE": "大きさ",
+      "STRENGTH": "強さ",
+      "MIX": "混合"
+    }
+  },
+  "vhs": {
+    "name": "VHS",
+    "text": "VHS トラッキング: [TRACKING] 色にじみ: [CHROMA] ノイズ: [NOISE] % 走査線: [SCANLINES] % シード: [SEED] 変化: [EVOLUTION] 混合: [MIX] %",
+    "labels": {
+      "TRACKING": "トラッキング",
+      "CHROMA": "色にじみ",
+      "NOISE": "ノイズ",
+      "SCANLINES": "走査線",
+      "SEED": "シード",
+      "EVOLUTION": "変化",
+      "MIX": "混合"
+    }
+  },
+  "glitch": {
+    "name": "グリッチ",
+    "text": "グリッチ 分割: [SLICES] ずれ: [SHIFT] RGB分離: [RGB] 密度: [DENSITY] % シード: [SEED] 変化: [EVOLUTION] 混合: [MIX] %",
+    "labels": {
+      "SLICES": "分割",
+      "SHIFT": "ずれ",
+      "RGB": "RGB",
+      "DENSITY": "濃度",
+      "SEED": "シード",
+      "EVOLUTION": "変化",
+      "MIX": "混合"
+    }
+  }
+}

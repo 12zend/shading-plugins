@@ -1,0 +1,379 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "film",
+  "name": "Film & Retro",
+  "blocks": [
+    {
+      "id": "rgb-shift",
+      "name": "rgbShift",
+      "text": "rgb shift dir: [DIR] value: [VALUE] color: [COLOR] mix: [MIX] %",
+      "opcode": "rgbShift",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "rgbShift"
+      },
+      "inputs": [
+        {
+          "id": "DIR",
+          "label": "dir",
+          "type": "angle",
+          "defaultValue": 90
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 5
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "menu",
+          "items": [
+            "RG",
+            "GB",
+            "BR"
+          ],
+          "defaultValue": "RG"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "film-grain",
+      "name": "filmGrain",
+      "text": "film grain intensity: [INTENSITY] response: [RESPONSE] size: [SIZE] animate: [ANIMATE] mix: [MIX] %",
+      "opcode": "filmGrain",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "filmGrain"
+      },
+      "inputs": [
+        {
+          "id": "INTENSITY",
+          "label": "intensity",
+          "type": "number",
+          "defaultValue": 0.15
+        },
+        {
+          "id": "RESPONSE",
+          "label": "response",
+          "type": "number",
+          "defaultValue": 0.15
+        },
+        {
+          "id": "SIZE",
+          "label": "size",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "ANIMATE",
+          "label": "animate",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "dither",
+      "name": "dither",
+      "text": "dither colors r: [R] g: [G] b: [B] spread: [SPREAD] scale: [SCALE] mix: [MIX] %",
+      "opcode": "dither",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "dither"
+      },
+      "inputs": [
+        {
+          "id": "R",
+          "label": "r",
+          "type": "number",
+          "defaultValue": 4
+        },
+        {
+          "id": "G",
+          "label": "g",
+          "type": "number",
+          "defaultValue": 4
+        },
+        {
+          "id": "B",
+          "label": "b",
+          "type": "number",
+          "defaultValue": 4
+        },
+        {
+          "id": "SPREAD",
+          "label": "spread",
+          "type": "number",
+          "defaultValue": 0.5
+        },
+        {
+          "id": "SCALE",
+          "label": "scale",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "halftone",
+      "name": "halftone",
+      "text": "CMYK halftone size: [SIZE] mix: [MIX] %",
+      "opcode": "halftone",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "halftone"
+      },
+      "inputs": [
+        {
+          "id": "SIZE",
+          "label": "size",
+          "type": "number",
+          "defaultValue": 4
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "ascii",
+      "name": "ascii",
+      "text": "ASCII cell x: [X] y: [Y] foreground: [FG] background: [BG] invert: [INVERT] mix: [MIX] %",
+      "opcode": "ascii",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "ascii"
+      },
+      "inputs": [
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 6
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 8
+        },
+        {
+          "id": "FG",
+          "label": "fg",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "BG",
+          "label": "bg",
+          "type": "color",
+          "defaultValue": "#000000"
+        },
+        {
+          "id": "INVERT",
+          "label": "invert",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "crt",
+      "name": "crt",
+      "text": "CRT curvature: [CURVATURE] border: [BORDER] scan size: [SIZE] strength: [STRENGTH] mix: [MIX] %",
+      "opcode": "crt",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "crt"
+      },
+      "inputs": [
+        {
+          "id": "CURVATURE",
+          "label": "curvature",
+          "type": "number",
+          "defaultValue": 10
+        },
+        {
+          "id": "BORDER",
+          "label": "border",
+          "type": "number",
+          "defaultValue": 0.08
+        },
+        {
+          "id": "SIZE",
+          "label": "size",
+          "type": "number",
+          "defaultValue": 2
+        },
+        {
+          "id": "STRENGTH",
+          "label": "strength",
+          "type": "number",
+          "defaultValue": 0.35
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "vhs",
+      "name": "vhs",
+      "text": "VHS tracking: [TRACKING] px chroma bleed: [CHROMA] px noise: [NOISE] % scanlines: [SCANLINES] % seed: [SEED] evolution: [EVOLUTION] mix: [MIX] %",
+      "opcode": "vhs",
+      "blockType": "command",
+      "groupEffectScope": "expanded",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "vhs"
+      },
+      "inputs": [
+        {
+          "id": "TRACKING",
+          "label": "tracking",
+          "type": "number",
+          "defaultValue": 6
+        },
+        {
+          "id": "CHROMA",
+          "label": "chroma",
+          "type": "number",
+          "defaultValue": 3
+        },
+        {
+          "id": "NOISE",
+          "label": "noise",
+          "type": "number",
+          "defaultValue": 12
+        },
+        {
+          "id": "SCANLINES",
+          "label": "scanlines",
+          "type": "number",
+          "defaultValue": 25
+        },
+        {
+          "id": "SEED",
+          "label": "seed",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "EVOLUTION",
+          "label": "evolution",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "glitch",
+      "name": "glitch",
+      "text": "digital glitch slices: [SLICES] shift: [SHIFT] px RGB split: [RGB] px density: [DENSITY] % seed: [SEED] evolution: [EVOLUTION] mix: [MIX] %",
+      "opcode": "glitch",
+      "blockType": "command",
+      "groupEffectScope": "expanded",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "glitch"
+      },
+      "inputs": [
+        {
+          "id": "SLICES",
+          "label": "slices",
+          "type": "number",
+          "defaultValue": 24
+        },
+        {
+          "id": "SHIFT",
+          "label": "shift",
+          "type": "number",
+          "defaultValue": 28
+        },
+        {
+          "id": "RGB",
+          "label": "rgb",
+          "type": "number",
+          "defaultValue": 6
+        },
+        {
+          "id": "DENSITY",
+          "label": "density",
+          "type": "number",
+          "defaultValue": 35
+        },
+        {
+          "id": "SEED",
+          "label": "seed",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "EVOLUTION",
+          "label": "evolution",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    }
+  ]
+}

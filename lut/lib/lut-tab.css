@@ -1,0 +1,271 @@
+/* LUT tab styles (plugin copy of the former built-in LUT editor). */
+.shading-plugin-lut-file-input { display: none; }
+
+.shading-plugin-lut-editor {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: var(--ui-white);
+    color: var(--text-primary);
+}
+
+.shading-plugin-lut-toolbar {
+    min-height: 3.25rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--ui-black-transparent);
+    background: var(--ui-tertiary);
+}
+
+.shading-plugin-lut-toolbar-actions {
+    display: flex;
+    gap: 0.375rem;
+    margin-left: auto;
+}
+
+.shading-plugin-lut-name-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.shading-plugin-lut-name-label input {
+    width: 12rem;
+    height: 2rem;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    border: 1px solid var(--ui-black-transparent);
+    border-radius: 0.25rem;
+    color: var(--text-primary);
+    background: var(--input-background);
+    font: inherit;
+    font-weight: normal;
+}
+
+.shading-plugin-lut-editor button {
+    min-height: 2rem;
+    padding: 0 0.75rem;
+    border: 1px solid var(--ui-black-transparent);
+    border-radius: 0.25rem;
+    color: var(--text-primary);
+    background: var(--ui-white);
+    font: inherit;
+    font-size: 0.72rem;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.shading-plugin-lut-editor button:hover:not(:disabled) {
+    border-color: var(--looks-secondary);
+    background: var(--looks-light-transparent);
+}
+
+.shading-plugin-lut-editor button[aria-pressed="true"] {
+    border-color: var(--looks-secondary);
+    background: var(--looks-light-transparent);
+}
+
+.shading-plugin-lut-editor .shading-plugin-lut-primary-button {
+    border-color: var(--looks-secondary);
+    background: var(--looks-secondary);
+    color: #ffffff;
+}
+
+.shading-plugin-lut-editor .shading-plugin-lut-primary-button:hover:not(:disabled) {
+    background: var(--looks-secondary-dark);
+}
+
+.shading-plugin-lut-editor button:disabled { opacity: 0.5; cursor: default; }
+
+.shading-plugin-lut-editor button:focus-visible,
+.shading-plugin-lut-name-label input:focus,
+.shading-plugin-lut-preview:focus-visible {
+    outline: 3px solid var(--looks-transparent);
+    outline-offset: 1px;
+}
+
+/* A checkerboard makes clipped or transparent LUT cells visible against any theme. */
+.shading-plugin-lut-preview {
+    position: relative;
+    flex: 1;
+    min-height: 10rem;
+    overflow: auto;
+    background-color: var(--assets-background);
+    background-image:
+        linear-gradient(45deg, var(--ui-black-transparent) 25%, transparent 25%, transparent 75%, var(--ui-black-transparent) 75%),
+        linear-gradient(45deg, var(--ui-black-transparent) 25%, transparent 25%, transparent 75%, var(--ui-black-transparent) 75%);
+    background-position: 0 0, 0.5rem 0.5rem;
+    background-size: 1rem 1rem;
+}
+
+.shading-plugin-lut-fit {
+    position: absolute;
+    inset: 1.25rem;
+    display: block;
+    width: calc(100% - 2.5rem);
+    height: calc(100% - 2.5rem);
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+.shading-plugin-lut-actual-size {
+    display: block;
+    max-width: none;
+    margin: 1.25rem;
+    image-rendering: pixelated;
+}
+
+.shading-plugin-lut-thumbnail { width: 100%; height: 100%; object-fit: contain; }
+
+.shading-plugin-lut-metadata {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.4rem 1rem;
+    padding: 0.6rem 0.85rem;
+    border-top: 1px solid var(--ui-black-transparent);
+    color: var(--ui-text-primary-transparent);
+    font-size: 0.72rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.shading-plugin-lut-metadata strong { color: var(--text-primary); }
+
+.shading-plugin-lut-layout-controls {
+    min-width: 0;
+    margin: 0;
+    padding: 0.75rem 0.85rem 0.85rem;
+    border: 0;
+    border-top: 1px solid var(--ui-black-transparent);
+    background: var(--ui-tertiary);
+    font-size: 0.72rem;
+}
+
+.shading-plugin-lut-layout-controls legend {
+    float: left;
+    width: 100%;
+    margin-bottom: 0.55rem;
+    padding: 0;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.shading-plugin-lut-layout-fields {
+    clear: both;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.9rem;
+}
+
+.shading-plugin-lut-layout-fields label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    color: var(--ui-text-primary-transparent);
+    font-weight: 600;
+}
+
+.shading-plugin-lut-layout-fields .shading-plugin-lut-checkbox-label {
+    min-height: 2rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-primary);
+    font-weight: normal;
+}
+
+.shading-plugin-lut-layout-fields input,
+.shading-plugin-lut-layout-fields select {
+    max-width: 100%;
+    height: 2rem;
+    box-sizing: border-box;
+    padding: 0 0.45rem;
+    border: 1px solid var(--ui-black-transparent);
+    border-radius: 0.25rem;
+    color: var(--text-primary);
+    background: var(--input-background);
+    font: inherit;
+}
+
+.shading-plugin-lut-layout-fields input[type="number"] { width: 5rem; font-variant-numeric: tabular-nums; }
+
+.shading-plugin-lut-layout-fields input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--looks-secondary);
+}
+
+.shading-plugin-lut-layout-fields input:focus-visible,
+.shading-plugin-lut-layout-fields select:focus-visible {
+    outline: 3px solid var(--looks-transparent);
+    outline-offset: 1px;
+    border-color: var(--looks-secondary);
+}
+
+.shading-plugin-lut-layout-controls p {
+    max-width: 75ch;
+    margin: 0.65rem 0 0;
+    color: var(--ui-text-primary-transparent);
+    line-height: 1.45;
+}
+
+.shading-plugin-lut-help {
+    margin: 0;
+    padding: 0.65rem 0.85rem;
+    border-top: 1px solid var(--ui-black-transparent);
+    color: var(--ui-text-primary-transparent);
+    font-size: 0.7rem;
+    line-height: 1.45;
+}
+
+.shading-plugin-lut-empty {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    background: var(--assets-background);
+}
+
+.shading-plugin-lut-empty h2 { margin: 0 0 0.4rem; font-size: 1.1rem; }
+
+.shading-plugin-lut-empty p {
+    max-width: 32rem;
+    margin: 0 0 1rem;
+    color: var(--ui-text-primary-transparent);
+    line-height: 1.45;
+}
+
+.shading-plugin-lut-empty .shading-plugin-lut-primary-button { min-height: 2.25rem; padding: 0 1rem; font-size: 0.8rem; }
+
+.shading-plugin-lut-status {
+    margin: 0;
+    padding: 0.55rem 0.85rem;
+    border-top: 1px solid var(--ui-black-transparent);
+    color: var(--ui-text-primary-transparent);
+    font-size: 0.72rem;
+}
+
+.shading-plugin-lut-error {
+    margin: 0.65rem 0.85rem;
+    padding: 0.55rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--error-primary);
+    background: var(--error-transparent);
+    color: var(--text-primary);
+    font-size: 0.72rem;
+    line-height: 1.4;
+}

@@ -1,0 +1,249 @@
+{
+  "colorGrade": {
+    "EXPOSURE": 0,
+    "TEMP": 0,
+    "TINT": 0,
+    "CONTRAST": 1,
+    "PIVOT": 0.5,
+    "COLOR": "#ffffff",
+    "SATURATION": 0,
+    "MIX": 100
+  },
+  "colorSpaceAdjust": {
+    "HADD": 0,
+    "HMUL": 1,
+    "SADD": 0,
+    "SMUL": 1,
+    "LADD": 0,
+    "LMUL": 1,
+    "MIX": 100
+  },
+  "paletteSwap": {
+    "C1": "#0b1026",
+    "C2": "#3b426e",
+    "C3": "#8a6f7d",
+    "C4": "#f6d6bd",
+    "MIX": 100
+  },
+  "rgbShift": {
+    "DIR": 90,
+    "VALUE": 5,
+    "COLOR": "RG",
+    "MIX": 100
+  },
+  "gaussianBlur": {
+    "TYPE": "normal",
+    "VALUE": 5,
+    "MIX": 100
+  },
+  "directionalBlur": {
+    "DIR": 90,
+    "VALUE": 5,
+    "MIX": 100
+  },
+  "radialBlur": {
+    "TYPE": "dir",
+    "VALUE": 5,
+    "X": 0,
+    "Y": 0,
+    "MIX": 100
+  },
+  "lensBlur": {
+    "RADIUS": 8,
+    "SHAPE": "circle",
+    "ROTATION": 0,
+    "MIX": 100
+  },
+  "lensDistortion": {
+    "VALUE": 25,
+    "X": 0,
+    "Y": 0,
+    "ZOOM": 100,
+    "MIX": 100
+  },
+  "bloom": {
+    "THRESHOLD": 0.7,
+    "RADIUS": 8,
+    "VALUE": 1,
+    "COLOR": "#ffffff",
+    "INVERT": "false"
+  },
+  "deepGlow": {
+    "THRESHOLD": 0.7,
+    "RADIUS": 8,
+    "VALUE": 1,
+    "COLOR": "#ffffff"
+  },
+  "edgeDetection": {
+    "THRESHOLD": 0.1,
+    "VALUE": 1,
+    "RADIUS": 1,
+    "SOFTNESS": 0.02,
+    "COLOR": "#000000",
+    "BACKGROUND": "#ffffff",
+    "ALPHA": 100,
+    "MIX": 100
+  },
+  "sharpen": {
+    "VALUE": 1,
+    "RADIUS": 1,
+    "MIX": 100
+  },
+  "fxaa": {
+    "CONTRAST": 0.0312,
+    "RELATIVE": 0.063,
+    "SUBPIXEL": 1,
+    "MIX": 100
+  },
+  "differenceOfGaussians": {
+    "SIGMA": 1,
+    "SCALE": 1.6,
+    "TAU": 0.98,
+    "THRESHOLD": 0.02,
+    "COLORED": "false",
+    "COLOR": "#101020",
+    "MIX": 100
+  },
+  "kuwahara": {
+    "RADIUS": 4,
+    "MIX": 100
+  },
+  "chromaticAberration": {
+    "INTENSITY": 2,
+    "RADIUS": 1,
+    "HARDNESS": 1,
+    "X": 0,
+    "Y": 0,
+    "MIX": 100
+  },
+  "filmGrain": {
+    "INTENSITY": 0.15,
+    "RESPONSE": 0.15,
+    "SIZE": 1,
+    "ANIMATE": "false",
+    "MIX": 100
+  },
+  "dither": {
+    "R": 4,
+    "G": 4,
+    "B": 4,
+    "SPREAD": 0.5,
+    "SCALE": 1,
+    "MIX": 100
+  },
+  "halftone": {
+    "SIZE": 4,
+    "MIX": 100
+  },
+  "ascii": {
+    "X": 6,
+    "Y": 8,
+    "FG": "#ffffff",
+    "BG": "#000000",
+    "INVERT": "false",
+    "MIX": 100
+  },
+  "crt": {
+    "CURVATURE": 10,
+    "BORDER": 0.08,
+    "SIZE": 2,
+    "STRENGTH": 0.35,
+    "MIX": 100
+  },
+  "vhs": {
+    "TRACKING": 6,
+    "CHROMA": 3,
+    "NOISE": 12,
+    "SCANLINES": 25,
+    "SEED": 0,
+    "EVOLUTION": 0,
+    "MIX": 100
+  },
+  "glitch": {
+    "SLICES": 24,
+    "SHIFT": 28,
+    "RGB": 6,
+    "DENSITY": 35,
+    "SEED": 0,
+    "EVOLUTION": 0,
+    "MIX": 100
+  },
+  "vignette": {
+    "COLOR": "#000000",
+    "X": 1,
+    "Y": 1,
+    "OFFSETX": 0,
+    "OFFSETY": 0,
+    "INTENSITY": 1,
+    "ROUNDNESS": 1,
+    "SOFTNESS": 1,
+    "MIX": 100
+  },
+  "framing": {
+    "SHAPE": "rectangle",
+    "RADIUS": 0.45,
+    "SOFTNESS": 0.02,
+    "COLOR": "#000000",
+    "OPACITY": 100,
+    "X": 0,
+    "Y": 0,
+    "MIX": 100
+  },
+  "wavy": {
+    "TYPE": "both",
+    "VALUE": 8,
+    "SIZE": 64,
+    "COMPLEXITY": 3,
+    "EVOLUTION": 0,
+    "SEED": 0,
+    "X": 0,
+    "Y": 0,
+    "CENTERX": 0,
+    "CENTERY": 0,
+    "MIX": 100
+  },
+  "pixelate": {
+    "X": 8,
+    "Y": 8,
+    "OFFSETX": 0,
+    "OFFSETY": 0,
+    "MIX": 100
+  },
+  "pixelStretch": {
+    "TYPE": "x",
+    "POSITION": 0,
+    "SIZE": 100,
+    "SAMPLE": 1,
+    "CENTERX": 0,
+    "CENTERY": 0,
+    "MIX": 100
+  },
+  "mirror": {
+    "TYPE": "x",
+    "X": 0,
+    "Y": 0,
+    "MIX": 100
+  },
+  "duplicate": {
+    "X": 0,
+    "Y": 0,
+    "SIZE": 50,
+    "DIR": 0,
+    "ANCHORX": 0,
+    "ANCHORY": 0,
+    "MIX": 100
+  },
+  "pixelSort": {
+    "TYPE": "x",
+    "SPAN": 64,
+    "MIN": 0.4,
+    "MAX": 0.72,
+    "INVERT": "false",
+    "SORTBY": "luminance",
+    "REVERSE": "false",
+    "GAMMA": 1,
+    "CENTERX": 0,
+    "CENTERY": 0,
+    "MIX": 100
+  }
+}

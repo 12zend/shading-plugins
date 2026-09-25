@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "stylize",
+  "name": "Stylize",
+  "version": "1.0.0",
+  "description": "Outlines, edges, sharpening, anti-aliasing and painterly filters.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "スタイライズ",
+      "description": "縁取り・エッジ・シャープ・アンチエイリアス・絵画風フィルター。"
+    }
+  }
+}

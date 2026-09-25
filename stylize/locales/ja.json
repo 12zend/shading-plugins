@@ -1,0 +1,64 @@
+{
+  "stroke": {
+    "name": "輪郭",
+    "text": "輪郭 色: [COLOR] 太さ: [WIDTH]",
+    "labels": {
+      "COLOR": "色",
+      "WIDTH": "太さ"
+    }
+  },
+  "edge-detection": {
+    "name": "輪郭検出",
+    "text": "輪郭検出 しきい値: [THRESHOLD] 強さ: [VALUE] 半径: [RADIUS] 柔らかさ: [SOFTNESS] 色: [COLOR] 背景: [BACKGROUND] 透明度: [ALPHA] % 混合: [MIX] %",
+    "labels": {
+      "THRESHOLD": "しきい値",
+      "VALUE": "値",
+      "RADIUS": "半径",
+      "SOFTNESS": "柔らかさ",
+      "COLOR": "色",
+      "BACKGROUND": "背景",
+      "ALPHA": "透明度",
+      "MIX": "混合"
+    }
+  },
+  "sharpen": {
+    "name": "シャープ",
+    "text": "シャープ 値: [VALUE] 半径: [RADIUS] 混合: [MIX] %",
+    "labels": {
+      "VALUE": "値",
+      "RADIUS": "半径",
+      "MIX": "混合"
+    }
+  },
+  "fxaa": {
+    "name": "FXAA",
+    "text": "FXAA コントラスト: [CONTRAST] 相対: [RELATIVE] サブピクセル: [SUBPIXEL] 混合: [MIX] %",
+    "labels": {
+      "CONTRAST": "コントラスト",
+      "RELATIVE": "相対",
+      "SUBPIXEL": "サブピクセル",
+      "MIX": "混合"
+    }
+  },
+  "difference-of-gaussians": {
+    "name": "ガウス差分",
+    "text": "ガウス差分 シグマ: [SIGMA] スケール: [SCALE] タウ: [TAU] しきい値: [THRESHOLD] カラー: [COLORED] インク: [COLOR] 混合: [MIX] %",
+    "labels": {
+      "SIGMA": "シグマ",
+      "SCALE": "スケール",
+      "TAU": "タウ",
+      "THRESHOLD": "しきい値",
+      "COLORED": "カラー",
+      "COLOR": "色",
+      "MIX": "混合"
+    }
+  },
+  "kuwahara": {
+    "name": "桑原フィルター",
+    "text": "桑原フィルター 半径: [RADIUS] 混合: [MIX] %",
+    "labels": {
+      "RADIUS": "半径",
+      "MIX": "混合"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "buffer-stack",
+  "name": "Buffer Stack",
+  "blocks": [
+    {
+      "id": "stack-current-drawing",
+      "name": "stackCurrentDrawing",
+      "text": "stack current drawing weight: [WEIGHT] max samples: [LIMIT]",
+      "opcode": "stackCurrentDrawing",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "stackCurrentDrawing"
+      },
+      "inputs": [
+        {
+          "id": "WEIGHT",
+          "label": "weight",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "LIMIT",
+          "label": "limit",
+          "type": "number",
+          "defaultValue": 10
+        }
+      ]
+    },
+    {
+      "id": "render-buffer-stack",
+      "name": "renderBufferStack",
+      "text": "render stacked drawings using [MODE] clear after: [CLEAR]",
+      "opcode": "renderBufferStack",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "renderBufferStack"
+      },
+      "inputs": [
+        {
+          "id": "MODE",
+          "label": "mode",
+          "type": "menu",
+          "items": [
+            "average",
+            "add",
+            "lighten",
+            "darken"
+          ],
+          "defaultValue": "average"
+        },
+        {
+          "id": "CLEAR",
+          "label": "clear",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        }
+      ]
+    },
+    {
+      "id": "clear-buffer-stack",
+      "name": "clearBufferStack",
+      "text": "clear drawing stack",
+      "opcode": "clearBufferStack",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "clearBufferStack"
+      }
+    },
+    {
+      "id": "buffer-stack-size",
+      "name": "bufferStackSize",
+      "text": "drawing stack samples",
+      "opcode": "bufferStackSize",
+      "blockType": "reporter",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "bufferStackSize"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "pixel-sort",
+  "name": "Pixel Sort",
+  "version": "1.0.0",
+  "description": "CPU pixel sorting along rows, columns or polar axes.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "ピクセルソート",
+      "description": "行・列・極座標方向のピクセルソート。"
+    }
+  }
+}

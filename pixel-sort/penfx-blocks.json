@@ -1,0 +1,106 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "pixel-sort",
+  "name": "Pixel Sort",
+  "blocks": [
+    {
+      "id": "pixel-sort",
+      "name": "pixelSort",
+      "text": "pixelsort [TYPE] span: [SPAN] min: [MIN] max: [MAX] invert mask: [INVERT] sort by: [SORTBY] reverse: [REVERSE] gamma: [GAMMA] center x: [CENTERX] y: [CENTERY] mix: [MIX] %",
+      "opcode": "pixelSort",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "pixelSort"
+      },
+      "inputs": [
+        {
+          "id": "TYPE",
+          "label": "type",
+          "type": "menu",
+          "items": [
+            "x",
+            "y",
+            "size",
+            "dir"
+          ],
+          "defaultValue": "x"
+        },
+        {
+          "id": "SPAN",
+          "label": "span",
+          "type": "number",
+          "defaultValue": 64
+        },
+        {
+          "id": "MIN",
+          "label": "min",
+          "type": "number",
+          "defaultValue": 0.4
+        },
+        {
+          "id": "MAX",
+          "label": "max",
+          "type": "number",
+          "defaultValue": 0.72
+        },
+        {
+          "id": "INVERT",
+          "label": "invert",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        },
+        {
+          "id": "SORTBY",
+          "label": "sortby",
+          "type": "menu",
+          "items": [
+            "luminance",
+            "saturation",
+            "hue"
+          ],
+          "defaultValue": "luminance"
+        },
+        {
+          "id": "REVERSE",
+          "label": "reverse",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        },
+        {
+          "id": "GAMMA",
+          "label": "gamma",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "CENTERX",
+          "label": "centerx",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "CENTERY",
+          "label": "centery",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    }
+  ]
+}

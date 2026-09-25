@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "distort",
+  "name": "Distort",
+  "version": "1.0.0",
+  "description": "Waves, pulses, pixelation, stretching, mirroring, transforms and displacement maps.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "変形",
+      "description": "波・パルス・ピクセル化・引き伸ばし・ミラー・変形・ディスプレイスメント。"
+    }
+  }
+}

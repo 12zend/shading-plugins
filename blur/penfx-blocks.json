@@ -1,0 +1,242 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "blur",
+  "name": "Blur",
+  "blocks": [
+    {
+      "id": "gaussian-blur",
+      "name": "gaussianBlur",
+      "text": "gaussian blur type: [TYPE] value: [VALUE] mix: [MIX] %",
+      "opcode": "gaussianBlur",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "gaussianBlur"
+      },
+      "inputs": [
+        {
+          "id": "TYPE",
+          "label": "type",
+          "type": "menu",
+          "items": [
+            "normal",
+            "horizontal",
+            "vertical"
+          ],
+          "defaultValue": "normal"
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 5
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "directional-blur",
+      "name": "directionalBlur",
+      "text": "directional blur dir: [DIR] value: [VALUE] mix: [MIX] %",
+      "opcode": "directionalBlur",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "directionalBlur"
+      },
+      "inputs": [
+        {
+          "id": "DIR",
+          "label": "dir",
+          "type": "angle",
+          "defaultValue": 90
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 5
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "radial-blur",
+      "name": "radialBlur",
+      "text": "radial blur type: [TYPE] value: [VALUE] center x: [X] y: [Y] mix: [MIX] %",
+      "opcode": "radialBlur",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "radialBlur"
+      },
+      "inputs": [
+        {
+          "id": "TYPE",
+          "label": "type",
+          "type": "menu",
+          "items": [
+            "dir",
+            "size"
+          ],
+          "defaultValue": "dir"
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 5
+        },
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "lens-blur",
+      "name": "lensBlur",
+      "text": "lens blur radius: [RADIUS] shape: [SHAPE] rotation: [ROTATION] mix: [MIX] %",
+      "opcode": "lensBlur",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "lensBlur"
+      },
+      "inputs": [
+        {
+          "id": "RADIUS",
+          "label": "radius",
+          "type": "number",
+          "defaultValue": 8
+        },
+        {
+          "id": "SHAPE",
+          "label": "shape",
+          "type": "menu",
+          "items": [
+            "circle",
+            "hexagon",
+            "octagon"
+          ],
+          "defaultValue": "circle"
+        },
+        {
+          "id": "ROTATION",
+          "label": "rotation",
+          "type": "angle",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "depth-of-field",
+      "name": "depthOfField",
+      "text": "depth of field focus: [FOCUS] range: [RANGE] aperture: [APERTURE] max blur: [MAXBLUR] near: [NEAR] % far: [FAR] % edge softness: [EDGE] shape: [SHAPE] rotation: [ROTATION] mix: [MIX] %",
+      "opcode": "depthOfField",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "depthOfField"
+      },
+      "inputs": [
+        {
+          "id": "FOCUS",
+          "label": "focus",
+          "type": "number",
+          "defaultValue": 480
+        },
+        {
+          "id": "RANGE",
+          "label": "range",
+          "type": "number",
+          "defaultValue": 24
+        },
+        {
+          "id": "APERTURE",
+          "label": "aperture",
+          "type": "number",
+          "defaultValue": 48
+        },
+        {
+          "id": "MAXBLUR",
+          "label": "maxblur",
+          "type": "number",
+          "defaultValue": 24
+        },
+        {
+          "id": "NEAR",
+          "label": "near",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "FAR",
+          "label": "far",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "EDGE",
+          "label": "edge",
+          "type": "number",
+          "defaultValue": 8
+        },
+        {
+          "id": "SHAPE",
+          "label": "shape",
+          "type": "menu",
+          "items": [
+            "circle",
+            "hexagon",
+            "octagon"
+          ],
+          "defaultValue": "circle"
+        },
+        {
+          "id": "ROTATION",
+          "label": "rotation",
+          "type": "angle",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "lut": {
+    "name": "LUT",
+    "text": "LUT [LUT] 適用量: [MIX] %",
+    "labels": {
+      "LUT": "LUT",
+      "MIX": "適用量"
+    }
+  }
+}

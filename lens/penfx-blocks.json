@@ -1,0 +1,391 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "lens",
+  "name": "Lens & Frame",
+  "blocks": [
+    {
+      "id": "chromatic-aberration",
+      "name": "chromaticAberration",
+      "text": "chromatic aberration intensity: [INTENSITY] radius: [RADIUS] hardness: [HARDNESS] offset x: [X] y: [Y] mix: [MIX] %",
+      "opcode": "chromaticAberration",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "chromaticAberration"
+      },
+      "inputs": [
+        {
+          "id": "INTENSITY",
+          "label": "intensity",
+          "type": "number",
+          "defaultValue": 2
+        },
+        {
+          "id": "RADIUS",
+          "label": "radius",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "HARDNESS",
+          "label": "hardness",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "lens-distortion",
+      "name": "lensDistortion",
+      "text": "lens distortion value: [VALUE] center x: [X] y: [Y] zoom: [ZOOM] % mix: [MIX] %",
+      "opcode": "lensDistortion",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "lensDistortion"
+      },
+      "inputs": [
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 25
+        },
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "ZOOM",
+          "label": "zoom",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "vignette",
+      "name": "vignette",
+      "text": "vignette color: [COLOR] size x: [X] y: [Y] offset x: [OFFSETX] y: [OFFSETY] intensity: [INTENSITY] roundness: [ROUNDNESS] softness: [SOFTNESS] mix: [MIX] %",
+      "opcode": "vignette",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "vignette"
+      },
+      "inputs": [
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#000000"
+        },
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "OFFSETX",
+          "label": "offsetx",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "OFFSETY",
+          "label": "offsety",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "INTENSITY",
+          "label": "intensity",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "ROUNDNESS",
+          "label": "roundness",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "SOFTNESS",
+          "label": "softness",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "composition",
+      "name": "composition",
+      "text": "composition grid [DIVISIONS] divisions width: [WIDTH] color: [COLOR] opacity: [OPACITY] % mix: [MIX] %",
+      "opcode": "composition",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "composition"
+      },
+      "inputs": [
+        {
+          "id": "DIVISIONS",
+          "label": "divisions",
+          "type": "number",
+          "defaultValue": 3
+        },
+        {
+          "id": "WIDTH",
+          "label": "width",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "OPACITY",
+          "label": "opacity",
+          "type": "number",
+          "defaultValue": 50
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "framing",
+      "name": "framing",
+      "text": "frame [SHAPE] radius: [RADIUS] softness: [SOFTNESS] color: [COLOR] opacity: [OPACITY] % offset x: [X] y: [Y] mix: [MIX] %",
+      "opcode": "framing",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "framing"
+      },
+      "inputs": [
+        {
+          "id": "SHAPE",
+          "label": "shape",
+          "type": "menu",
+          "items": [
+            "rectangle",
+            "circle"
+          ],
+          "defaultValue": "rectangle"
+        },
+        {
+          "id": "RADIUS",
+          "label": "radius",
+          "type": "number",
+          "defaultValue": 0.45
+        },
+        {
+          "id": "SOFTNESS",
+          "label": "softness",
+          "type": "number",
+          "defaultValue": 0.02
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#000000"
+        },
+        {
+          "id": "OPACITY",
+          "label": "opacity",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "zoom",
+      "name": "zoom",
+      "text": "zoom scale: [VALUE] offset x: [X] y: [Y] sample: [SAMPLE] mix: [MIX] %",
+      "opcode": "zoom",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "zoom"
+      },
+      "inputs": [
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "SAMPLE",
+          "label": "sample",
+          "type": "menu",
+          "items": [
+            "clamp",
+            "mirror",
+            "wrap",
+            "border"
+          ],
+          "defaultValue": "clamp"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "fog",
+      "name": "fog",
+      "text": "fog [TYPE] start: [START] end: [END] near color: [NEARCOLOR] far color: [FARCOLOR] density: [DENSITY] % curve: [CURVE] mix: [MIX] %",
+      "opcode": "fog",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "fog"
+      },
+      "inputs": [
+        {
+          "id": "TYPE",
+          "label": "type",
+          "type": "menu",
+          "items": [
+            "linear",
+            "smooth",
+            "exponential",
+            "exponential squared"
+          ],
+          "defaultValue": "linear"
+        },
+        {
+          "id": "START",
+          "label": "start",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "END",
+          "label": "end",
+          "type": "number",
+          "defaultValue": 1000
+        },
+        {
+          "id": "NEARCOLOR",
+          "label": "nearcolor",
+          "type": "color",
+          "defaultValue": "#d9e7f2"
+        },
+        {
+          "id": "FARCOLOR",
+          "label": "farcolor",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "DENSITY",
+          "label": "density",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "CURVE",
+          "label": "curve",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    }
+  ]
+}

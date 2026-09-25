@@ -1,0 +1,33 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "lut",
+  "name": "LUT",
+  "blocks": [
+    {
+      "id": "lut",
+      "name": "LUT",
+      "text": "LUT [LUT] mix: [MIX] %",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "applyLUT"
+      },
+      "opcode": "applyLUT",
+      "inputs": [
+        {
+          "id": "LUT",
+          "label": "LUT",
+          "type": "string",
+          "defaultValue": "",
+          "menu": "lutAssets"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    }
+  ]
+}

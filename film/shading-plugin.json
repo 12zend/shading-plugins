@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "film",
+  "name": "Film & Retro",
+  "version": "1.0.0",
+  "description": "Film grain, dithering, halftone, ASCII, CRT, VHS, glitch and RGB shift.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "フィルム・レトロ",
+      "description": "フィルム粒子・ディザ・網点・アスキー・ブラウン管・VHS・グリッチ・RGBずれ。"
+    }
+  }
+}

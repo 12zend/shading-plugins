@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "glow",
+  "name": "Glow",
+  "version": "1.0.0",
+  "description": "Bloom and deep glow for highlights and neon lights.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "グロー",
+      "description": "ハイライトやネオンのためのブルームとディープグロー。"
+    }
+  }
+}

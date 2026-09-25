@@ -1,0 +1,21 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "genshade",
+  "name": "Genshade / ReShade",
+  "version": "1.0.0",
+  "description": "Hundreds of ReShade FX effects (bloom, SMAA, MXAO, film looks, stylization…) compiled to WebGL in the editor.",
+  "author": "shading.app (ReShade FX compiler: Patrick Mours; shaders: their authors)",
+  "license": "GPL-3.0 AND BSD-3-Clause",
+  "main": "main.js",
+  "permissions": [
+    "wasm",
+    "network"
+  ],
+  "locales": {
+    "ja": {
+      "name": "Genshade / ReShade",
+      "description": "ReShadeのFXエフェクト（ブルーム・SMAA・MXAO・フィルムルック・スタイライズなど）をエディター内でWebGLにコンパイルして使えます。"
+    }
+  }
+}

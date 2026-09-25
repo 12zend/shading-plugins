@@ -1,0 +1,19 @@
+{
+  "pixel-sort": {
+    "name": "ピクセルソート",
+    "text": "ピクセルソート [TYPE] 範囲: [SPAN] 最小: [MIN] 最大: [MAX] 反転マスク: [INVERT] 並べ替え: [SORTBY] 逆順: [REVERSE] ガンマ: [GAMMA] 中心 x: [CENTERX] y: [CENTERY] 混合: [MIX] %",
+    "labels": {
+      "TYPE": "種類",
+      "SPAN": "範囲",
+      "MIN": "最小",
+      "MAX": "最大",
+      "INVERT": "反転",
+      "SORTBY": "並べ替え",
+      "REVERSE": "逆順",
+      "GAMMA": "ガンマ",
+      "CENTERX": "中心x",
+      "CENTERY": "中心y",
+      "MIX": "混合"
+    }
+  }
+}

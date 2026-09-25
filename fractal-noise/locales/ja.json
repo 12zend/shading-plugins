@@ -1,0 +1,25 @@
+{
+  "fractalnoise": {
+    "name": "フラクタルノイズ",
+    "text": "フラクタルノイズ フラクタル種類: [FRACTALTYPE] ノイズ種類: [NOISETYPE] 反転: [INVERT] コントラスト: [CONTRAST] 明るさ: [BRIGHTNESS] オーバーフロー: [OVERFLOW] 回転: [ROTATE] スケール: [SCALE] 幅: [WIDTH] 高さ: [HEIGHT] ランダムずれ: [OX] [OY] 遠近ずれ: [PERSPECTIVE] 奥行: [DEPTH] 変化: [EVOLUTION] 周期変化: [CYCLEEVOLUTION] 周期: [FREQ]",
+    "labels": {
+      "FRACTALTYPE": "フラクタル種類",
+      "NOISETYPE": "ノイズ種類",
+      "INVERT": "反転",
+      "CONTRAST": "コントラスト",
+      "BRIGHTNESS": "明るさ",
+      "OVERFLOW": "オーバーフロー",
+      "ROTATE": "回転",
+      "SCALE": "スケール",
+      "WIDTH": "太さ",
+      "HEIGHT": "高さ",
+      "OX": "ずれx",
+      "OY": "ずれy",
+      "PERSPECTIVE": "遠近",
+      "DEPTH": "奥行",
+      "EVOLUTION": "変化",
+      "CYCLEEVOLUTION": "周期変化",
+      "FREQ": "周期"
+    }
+  }
+}

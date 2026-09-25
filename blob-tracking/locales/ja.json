@@ -1,0 +1,20 @@
+{
+  "blob": {
+    "name": "ブロブ",
+    "text": "ブロブ [MODE] キー: [KEY] しきい値: [THRESHOLD] ぼかし: [BLUR] 最小: [MIN] % 最大: [MAX] % 箱: [SHAPE] 色: [COLOR] 太さ: [WIDTH] 不透明度: [OPACITY] % 塗り: [FILL] % マーカー: [MARKER]",
+    "labels": {
+      "MODE": "モード",
+      "KEY": "キー",
+      "THRESHOLD": "しきい値",
+      "BLUR": "ぼかし",
+      "MIN": "最小",
+      "MAX": "最大",
+      "SHAPE": "形状",
+      "COLOR": "色",
+      "WIDTH": "太さ",
+      "OPACITY": "不透明度",
+      "FILL": "塗り",
+      "MARKER": "マーカー"
+    }
+  }
+}

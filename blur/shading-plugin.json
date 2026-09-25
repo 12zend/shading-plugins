@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "blur",
+  "name": "Blur",
+  "version": "1.0.0",
+  "description": "Gaussian, directional, radial and lens blur, plus depth of field.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "ぼかし",
+      "description": "ガウス・方向・放射・レンズぼかしと被写界深度。"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "fractal-noise",
+  "name": "Fractal Noise",
+  "version": "1.0.0",
+  "description": "Procedural fractal noise with After Effects style controls.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "フラクタルノイズ",
+      "description": "After Effects風の設定を持つフラクタルノイズ生成。"
+    }
+  }
+}

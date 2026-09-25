@@ -1,0 +1,246 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "stylize",
+  "name": "Stylize",
+  "blocks": [
+    {
+      "id": "stroke",
+      "name": "stroke",
+      "text": "stroke color: [COLOR] width: [WIDTH]",
+      "opcode": "stroke",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "stroke"
+      },
+      "inputs": [
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#000000"
+        },
+        {
+          "id": "WIDTH",
+          "label": "width",
+          "type": "number",
+          "defaultValue": 4
+        }
+      ]
+    },
+    {
+      "id": "edge-detection",
+      "name": "edgeDetection",
+      "text": "edge detection threshold: [THRESHOLD] strength: [VALUE] radius: [RADIUS] softness: [SOFTNESS] color: [COLOR] background: [BACKGROUND] alpha: [ALPHA] % mix: [MIX] %",
+      "opcode": "edgeDetection",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "edgeDetection"
+      },
+      "inputs": [
+        {
+          "id": "THRESHOLD",
+          "label": "threshold",
+          "type": "number",
+          "defaultValue": 0.1
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "RADIUS",
+          "label": "radius",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "SOFTNESS",
+          "label": "softness",
+          "type": "number",
+          "defaultValue": 0.02
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#000000"
+        },
+        {
+          "id": "BACKGROUND",
+          "label": "background",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "ALPHA",
+          "label": "alpha",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "sharpen",
+      "name": "sharpen",
+      "text": "sharpen value: [VALUE] radius: [RADIUS] mix: [MIX] %",
+      "opcode": "sharpen",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "sharpen"
+      },
+      "inputs": [
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "RADIUS",
+          "label": "radius",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "fxaa",
+      "name": "fxaa",
+      "text": "FXAA contrast: [CONTRAST] relative: [RELATIVE] subpixel: [SUBPIXEL] mix: [MIX] %",
+      "opcode": "fxaa",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "fxaa"
+      },
+      "inputs": [
+        {
+          "id": "CONTRAST",
+          "label": "contrast",
+          "type": "number",
+          "defaultValue": 0.0312
+        },
+        {
+          "id": "RELATIVE",
+          "label": "relative",
+          "type": "number",
+          "defaultValue": 0.063
+        },
+        {
+          "id": "SUBPIXEL",
+          "label": "subpixel",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "difference-of-gaussians",
+      "name": "differenceOfGaussians",
+      "text": "difference of gaussians sigma: [SIGMA] scale: [SCALE] tau: [TAU] threshold: [THRESHOLD] colored: [COLORED] ink: [COLOR] mix: [MIX] %",
+      "opcode": "differenceOfGaussians",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "differenceOfGaussians"
+      },
+      "inputs": [
+        {
+          "id": "SIGMA",
+          "label": "sigma",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "SCALE",
+          "label": "scale",
+          "type": "number",
+          "defaultValue": 1.6
+        },
+        {
+          "id": "TAU",
+          "label": "tau",
+          "type": "number",
+          "defaultValue": 0.98
+        },
+        {
+          "id": "THRESHOLD",
+          "label": "threshold",
+          "type": "number",
+          "defaultValue": 0.02
+        },
+        {
+          "id": "COLORED",
+          "label": "colored",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#101020"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "kuwahara",
+      "name": "kuwahara",
+      "text": "kuwahara radius: [RADIUS] mix: [MIX] %",
+      "opcode": "kuwahara",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "kuwahara"
+      },
+      "inputs": [
+        {
+          "id": "RADIUS",
+          "label": "radius",
+          "type": "number",
+          "defaultValue": 4
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    }
+  ]
+}

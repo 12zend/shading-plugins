@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "color-grading",
+  "name": "Color Grading",
+  "version": "1.0.0",
+  "description": "Manual color grading and one-click film looks with live thumbnail previews.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "カラーグレーディング",
+      "description": "手動カラーグレーディングと、サムネイル付きのワンクリック・ルック。"
+    }
+  }
+}

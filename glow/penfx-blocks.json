@@ -1,0 +1,92 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "glow",
+  "name": "Glow",
+  "blocks": [
+    {
+      "id": "bloom",
+      "name": "bloom",
+      "text": "bloom threshold: [THRESHOLD] radius: [RADIUS] value: [VALUE] color: [COLOR] invert: [INVERT]",
+      "opcode": "bloom",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "bloom"
+      },
+      "inputs": [
+        {
+          "id": "THRESHOLD",
+          "label": "threshold",
+          "type": "number",
+          "defaultValue": 0.7
+        },
+        {
+          "id": "RADIUS",
+          "label": "radius",
+          "type": "number",
+          "defaultValue": 8
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "INVERT",
+          "label": "invert",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        }
+      ]
+    },
+    {
+      "id": "deep-glow",
+      "name": "deepGlow",
+      "text": "deep glow threshold: [THRESHOLD] radius: [RADIUS] value: [VALUE] color: [COLOR]",
+      "opcode": "deepGlow",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "deepGlow"
+      },
+      "inputs": [
+        {
+          "id": "THRESHOLD",
+          "label": "threshold",
+          "type": "number",
+          "defaultValue": 0.7
+        },
+        {
+          "id": "RADIUS",
+          "label": "radius",
+          "type": "number",
+          "defaultValue": 8
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "bloom": {
+    "name": "ブルーム",
+    "text": "ブルーム しきい値: [THRESHOLD] 半径: [RADIUS] 値: [VALUE] 色: [COLOR] 反転: [INVERT]",
+    "labels": {
+      "THRESHOLD": "しきい値",
+      "RADIUS": "半径",
+      "VALUE": "値",
+      "COLOR": "色",
+      "INVERT": "反転"
+    }
+  },
+  "deep-glow": {
+    "name": "ディープグロー",
+    "text": "ディープグロー しきい値: [THRESHOLD] 半径: [RADIUS] 値: [VALUE] 色: [COLOR]",
+    "labels": {
+      "THRESHOLD": "しきい値",
+      "RADIUS": "半径",
+      "VALUE": "値",
+      "COLOR": "色"
+    }
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "distort",
+  "name": "Distort",
+  "blocks": [
+    {
+      "id": "wavy",
+      "name": "wavy",
+      "text": "wavy type: [TYPE] amount: [VALUE] size: [SIZE] complexity: [COMPLEXITY] evolution: [EVOLUTION] seed: [SEED] offset x: [X] y: [Y] center x: [CENTERX] y: [CENTERY] mix: [MIX] %",
+      "opcode": "wavy",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "wavy"
+      },
+      "inputs": [
+        {
+          "id": "TYPE",
+          "label": "type",
+          "type": "menu",
+          "items": [
+            "both",
+            "x",
+            "y",
+            "size",
+            "dir"
+          ],
+          "defaultValue": "both"
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 8
+        },
+        {
+          "id": "SIZE",
+          "label": "size",
+          "type": "number",
+          "defaultValue": 64
+        },
+        {
+          "id": "COMPLEXITY",
+          "label": "complexity",
+          "type": "number",
+          "defaultValue": 3
+        },
+        {
+          "id": "EVOLUTION",
+          "label": "evolution",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "SEED",
+          "label": "seed",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "CENTERX",
+          "label": "centerx",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "CENTERY",
+          "label": "centery",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "pulse",
+      "name": "pulse",
+      "text": "pulse center x: [X] y: [Y] radius: [RADIUS] value: [VALUE] width: [WIDTH] frequency: [FREQUENCY] mix: [MIX] %",
+      "opcode": "pulse",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "pulse"
+      },
+      "inputs": [
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "RADIUS",
+          "label": "radius",
+          "type": "number",
+          "defaultValue": 80
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 12
+        },
+        {
+          "id": "WIDTH",
+          "label": "width",
+          "type": "number",
+          "defaultValue": 18
+        },
+        {
+          "id": "FREQUENCY",
+          "label": "frequency",
+          "type": "number",
+          "defaultValue": 0.55
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "pixelate",
+      "name": "pixelate",
+      "text": "pixelate size x: [X] y: [Y] offset x: [OFFSETX] y: [OFFSETY] mix: [MIX] %",
+      "opcode": "pixelate",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "pixelate"
+      },
+      "inputs": [
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 8
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 8
+        },
+        {
+          "id": "OFFSETX",
+          "label": "offsetx",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "OFFSETY",
+          "label": "offsety",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "pixel-stretch",
+      "name": "pixelStretch",
+      "text": "pixel stretch type: [TYPE] position: [POSITION] size: [SIZE] sample width: [SAMPLE] center x: [CENTERX] y: [CENTERY] mix: [MIX] %",
+      "opcode": "pixelStretch",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "pixelStretch"
+      },
+      "inputs": [
+        {
+          "id": "TYPE",
+          "label": "type",
+          "type": "menu",
+          "items": [
+            "x",
+            "y",
+            "size",
+            "dir"
+          ],
+          "defaultValue": "x"
+        },
+        {
+          "id": "POSITION",
+          "label": "position",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "SIZE",
+          "label": "size",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "SAMPLE",
+          "label": "sample",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "CENTERX",
+          "label": "centerx",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "CENTERY",
+          "label": "centery",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "mirror",
+      "name": "mirror",
+      "text": "mirror type: [TYPE] center x: [X] y: [Y] mix: [MIX] %",
+      "opcode": "mirror",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "mirror"
+      },
+      "inputs": [
+        {
+          "id": "TYPE",
+          "label": "type",
+          "type": "menu",
+          "items": [
+            "x",
+            "y",
+            "xy"
+          ],
+          "defaultValue": "x"
+        },
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "transform",
+      "name": "transform",
+      "text": "transform x: [X] y: [Y] size: [SIZE] dir: [DIR] anchor x: [ANCHORX] y: [ANCHORY] mix: [MIX] %",
+      "opcode": "transform",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "transform"
+      },
+      "inputs": [
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "SIZE",
+          "label": "size",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "DIR",
+          "label": "dir",
+          "type": "angle",
+          "defaultValue": 0
+        },
+        {
+          "id": "ANCHORX",
+          "label": "anchorx",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "ANCHORY",
+          "label": "anchory",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "duplicate",
+      "name": "duplicate",
+      "text": "duplicate x: [X] y: [Y] size: [SIZE] dir: [DIR] anchor x: [ANCHORX] y: [ANCHORY] mix: [MIX] %",
+      "opcode": "duplicate",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "duplicate"
+      },
+      "inputs": [
+        {
+          "id": "X",
+          "label": "x",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "Y",
+          "label": "y",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "SIZE",
+          "label": "size",
+          "type": "number",
+          "defaultValue": 50
+        },
+        {
+          "id": "DIR",
+          "label": "dir",
+          "type": "angle",
+          "defaultValue": 0
+        },
+        {
+          "id": "ANCHORX",
+          "label": "anchorx",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "ANCHORY",
+          "label": "anchory",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    },
+    {
+      "id": "displacement-map",
+      "name": "displacementMap",
+      "text": "displacement map costume: [COSTUME] value: [VALUE] type: [TYPE] channel: [CHANNEL] center: [CENTER] invert: [INVERT] mix: [MIX] %",
+      "opcode": "displacementMap",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "displacementMap"
+      },
+      "separatorBefore": true,
+      "inputs": [
+        {
+          "id": "COSTUME",
+          "label": "costume",
+          "type": "costume"
+        },
+        {
+          "id": "VALUE",
+          "label": "value",
+          "type": "number",
+          "defaultValue": 10
+        },
+        {
+          "id": "TYPE",
+          "label": "type",
+          "type": "menu",
+          "items": [
+            "x",
+            "y",
+            "size",
+            "dir"
+          ],
+          "defaultValue": "x"
+        },
+        {
+          "id": "CHANNEL",
+          "label": "channel",
+          "type": "menu",
+          "items": [
+            "luminance",
+            "r",
+            "g",
+            "b",
+            "a"
+          ],
+          "defaultValue": "luminance"
+        },
+        {
+          "id": "CENTER",
+          "label": "center",
+          "type": "number",
+          "defaultValue": 0.5
+        },
+        {
+          "id": "INVERT",
+          "label": "invert",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    }
+  ]
+}

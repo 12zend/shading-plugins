@@ -1,0 +1,90 @@
+{
+  "chromatic-aberration": {
+    "name": "色収差",
+    "text": "色収差 強さ: [INTENSITY] 半径: [RADIUS] 硬さ: [HARDNESS] ずれ x: [X] y: [Y] 混合: [MIX] %",
+    "labels": {
+      "INTENSITY": "強さ",
+      "RADIUS": "半径",
+      "HARDNESS": "硬さ",
+      "X": "x",
+      "Y": "y",
+      "MIX": "混合"
+    }
+  },
+  "lens-distortion": {
+    "name": "レンズ歪み",
+    "text": "レンズ歪み 値: [VALUE] 中心 x: [X] y: [Y] ズーム: [ZOOM] % 混合: [MIX] %",
+    "labels": {
+      "VALUE": "値",
+      "X": "x",
+      "Y": "y",
+      "ZOOM": "ズーム",
+      "MIX": "混合"
+    }
+  },
+  "vignette": {
+    "name": "ビネット",
+    "text": "ビネット 色: [COLOR] 大きさ x: [X] y: [Y] ずれ x: [OFFSETX] y: [OFFSETY] 強さ: [INTENSITY] 丸み: [ROUNDNESS] 柔らかさ: [SOFTNESS] 混合: [MIX] %",
+    "labels": {
+      "COLOR": "色",
+      "X": "x",
+      "Y": "y",
+      "OFFSETX": "ずれx",
+      "OFFSETY": "ずれy",
+      "INTENSITY": "強さ",
+      "ROUNDNESS": "丸み",
+      "SOFTNESS": "柔らかさ",
+      "MIX": "混合"
+    }
+  },
+  "composition": {
+    "name": "構図ガイド",
+    "text": "構図ガイド [DIVISIONS] 分割 太さ: [WIDTH] 色: [COLOR] 不透明度: [OPACITY] % 混合: [MIX] %",
+    "labels": {
+      "DIVISIONS": "分割",
+      "WIDTH": "太さ",
+      "COLOR": "色",
+      "OPACITY": "不透明度",
+      "MIX": "混合"
+    }
+  },
+  "framing": {
+    "name": "フレーム",
+    "text": "フレーム [SHAPE] 半径: [RADIUS] 柔らかさ: [SOFTNESS] 色: [COLOR] 不透明度: [OPACITY] % ずれ x: [X] y: [Y] 混合: [MIX] %",
+    "labels": {
+      "SHAPE": "形状",
+      "RADIUS": "半径",
+      "SOFTNESS": "柔らかさ",
+      "COLOR": "色",
+      "OPACITY": "不透明度",
+      "X": "x",
+      "Y": "y",
+      "MIX": "混合"
+    }
+  },
+  "zoom": {
+    "name": "ズーム",
+    "text": "ズーム 倍率: [VALUE] ずれ x: [X] y: [Y] サンプル: [SAMPLE] 混合: [MIX] %",
+    "labels": {
+      "VALUE": "値",
+      "X": "x",
+      "Y": "y",
+      "SAMPLE": "サンプル",
+      "MIX": "混合"
+    }
+  },
+  "fog": {
+    "name": "フォグ",
+    "text": "フォグ [TYPE] 開始: [START] 終了: [END] 近くの色: [NEARCOLOR] 遠くの色: [FARCOLOR] 濃度: [DENSITY] % カーブ: [CURVE] 混合: [MIX] %",
+    "labels": {
+      "TYPE": "種類",
+      "START": "開始",
+      "END": "終了",
+      "NEARCOLOR": "近くの色",
+      "FARCOLOR": "遠くの色",
+      "DENSITY": "濃度",
+      "CURVE": "カーブ",
+      "MIX": "混合"
+    }
+  }
+}

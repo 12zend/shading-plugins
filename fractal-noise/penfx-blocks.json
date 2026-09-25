@@ -1,0 +1,165 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "fractal-noise",
+  "name": "Fractal Noise",
+  "blocks": [
+    {
+      "id": "fractalnoise",
+      "name": "fractalnoise",
+      "text": "fractal noise fractal type: [FRACTALTYPE] noise type: [NOISETYPE] invert: [INVERT] contrast: [CONTRAST] brightness: [BRIGHTNESS] overflow: [OVERFLOW] rotate: [ROTATE] scale: [SCALE] width: [WIDTH] height: [HEIGHT] random offset: [OX] [OY] perspective offset: [PERSPECTIVE] depth: [DEPTH] evolution: [EVOLUTION] cycle evolution: [CYCLEEVOLUTION] cycle: [FREQ]",
+      "opcode": "fractalnoise",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "fractalnoise"
+      },
+      "inputs": [
+        {
+          "id": "FRACTALTYPE",
+          "label": "fractaltype",
+          "type": "menu",
+          "items": [
+            "基本",
+            "タービュレント(滑らか)",
+            "タービュレント(基本)",
+            "タービュレント(シャープ)",
+            "ダイナミック",
+            "ダイナミック（プログレッシブ）",
+            "ダイナミック（ツイスト）",
+            "最大",
+            "にじみ",
+            "渦巻き",
+            "岩肌",
+            "曇り雲",
+            "土",
+            "サブスケール",
+            "小さなバンプ",
+            "ストリング",
+            "スレッド"
+          ],
+          "defaultValue": "基本"
+        },
+        {
+          "id": "NOISETYPE",
+          "label": "noisetype",
+          "type": "menu",
+          "items": [
+            "ブロック",
+            "リニア",
+            "ソフトリニア",
+            "スプライン"
+          ],
+          "defaultValue": "ブロック"
+        },
+        {
+          "id": "INVERT",
+          "label": "invert",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        },
+        {
+          "id": "CONTRAST",
+          "label": "contrast",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "BRIGHTNESS",
+          "label": "brightness",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "OVERFLOW",
+          "label": "overflow",
+          "type": "menu",
+          "items": [
+            "HDR",
+            "Clip",
+            "Soft clamp"
+          ],
+          "defaultValue": "HDR"
+        },
+        {
+          "id": "ROTATE",
+          "label": "rotate",
+          "type": "angle",
+          "defaultValue": 0
+        },
+        {
+          "id": "SCALE",
+          "label": "scale",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "WIDTH",
+          "label": "width",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "HEIGHT",
+          "label": "height",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "OX",
+          "label": "ox",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "OY",
+          "label": "oy",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "PERSPECTIVE",
+          "label": "perspective",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        },
+        {
+          "id": "DEPTH",
+          "label": "depth",
+          "type": "number",
+          "defaultValue": 6
+        },
+        {
+          "id": "EVOLUTION",
+          "label": "evolution",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "CYCLEEVOLUTION",
+          "label": "cycleevolution",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "false"
+        },
+        {
+          "id": "FREQ",
+          "label": "freq",
+          "type": "number",
+          "defaultValue": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "color-grading",
+  "name": "Color Grading",
+  "blocks": [
+    {
+      "id": "color-grade",
+      "name": "colorGrade",
+      "text": "color grade exposure: [EXPOSURE] temp: [TEMP] tint: [TINT] contrast: [CONTRAST] pivot: [PIVOT] filter: [COLOR] saturation: [SATURATION] mix: [MIX] %",
+      "opcode": "colorGrade",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "colorGrade"
+      },
+      "inputs": [
+        {
+          "id": "EXPOSURE",
+          "label": "exposure",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "TEMP",
+          "label": "temp",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "TINT",
+          "label": "tint",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "CONTRAST",
+          "label": "contrast",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "PIVOT",
+          "label": "pivot",
+          "type": "number",
+          "defaultValue": 0.5
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "SATURATION",
+          "label": "saturation",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
+    }
+  ]
+}

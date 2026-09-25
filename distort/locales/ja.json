@@ -1,0 +1,105 @@
+{
+  "wavy": {
+    "name": "波",
+    "text": "波 種類: [TYPE] 量: [VALUE] 大きさ: [SIZE] 複雑さ: [COMPLEXITY] 変化: [EVOLUTION] シード: [SEED] ずれ x: [X] y: [Y] 中心 x: [CENTERX] y: [CENTERY] 混合: [MIX] %",
+    "labels": {
+      "TYPE": "種類",
+      "VALUE": "値",
+      "SIZE": "大きさ",
+      "COMPLEXITY": "複雑さ",
+      "EVOLUTION": "変化",
+      "SEED": "シード",
+      "X": "x",
+      "Y": "y",
+      "CENTERX": "中心x",
+      "CENTERY": "中心y",
+      "MIX": "混合"
+    }
+  },
+  "pulse": {
+    "name": "パルス",
+    "text": "パルス 中心 x: [X] y: [Y] 半径: [RADIUS] 値: [VALUE] 幅: [WIDTH] 周波数: [FREQUENCY] 混合: [MIX] %",
+    "labels": {
+      "X": "x",
+      "Y": "y",
+      "RADIUS": "半径",
+      "VALUE": "値",
+      "WIDTH": "太さ",
+      "FREQUENCY": "周波数",
+      "MIX": "混合"
+    }
+  },
+  "pixelate": {
+    "name": "モザイク",
+    "text": "モザイク 大きさ x: [X] y: [Y] ずれ x: [OFFSETX] y: [OFFSETY] 混合: [MIX] %",
+    "labels": {
+      "X": "x",
+      "Y": "y",
+      "OFFSETX": "ずれx",
+      "OFFSETY": "ずれy",
+      "MIX": "混合"
+    }
+  },
+  "pixel-stretch": {
+    "name": "ピクセルストレッチ",
+    "text": "ピクセルストレッチ 種類: [TYPE] 位置: [POSITION] 大きさ: [SIZE] サンプル幅: [SAMPLE] 中心 x: [CENTERX] y: [CENTERY] 混合: [MIX] %",
+    "labels": {
+      "TYPE": "種類",
+      "POSITION": "位置",
+      "SIZE": "大きさ",
+      "SAMPLE": "サンプル",
+      "CENTERX": "中心x",
+      "CENTERY": "中心y",
+      "MIX": "混合"
+    }
+  },
+  "mirror": {
+    "name": "ミラー",
+    "text": "ミラー 種類: [TYPE] 中心 x: [X] y: [Y] 混合: [MIX] %",
+    "labels": {
+      "TYPE": "種類",
+      "X": "x",
+      "Y": "y",
+      "MIX": "混合"
+    }
+  },
+  "transform": {
+    "name": "変形",
+    "text": "変形 x: [X] y: [Y] 大きさ: [SIZE] 向き: [DIR] 基準 x: [ANCHORX] y: [ANCHORY] 混合: [MIX] %",
+    "labels": {
+      "X": "x",
+      "Y": "y",
+      "SIZE": "大きさ",
+      "DIR": "向き",
+      "ANCHORX": "基準x",
+      "ANCHORY": "基準y",
+      "MIX": "混合"
+    }
+  },
+  "duplicate": {
+    "name": "複製",
+    "text": "複製 x: [X] y: [Y] 大きさ: [SIZE] 向き: [DIR] 基準 x: [ANCHORX] y: [ANCHORY] 混合: [MIX] %",
+    "labels": {
+      "X": "x",
+      "Y": "y",
+      "SIZE": "大きさ",
+      "DIR": "向き",
+      "ANCHORX": "基準x",
+      "ANCHORY": "基準y",
+      "MIX": "混合"
+    }
+  },
+  "displacement-map": {
+    "name": "変位マップ",
+    "text": "変位マップ コスチューム: [COSTUME] 値: [VALUE] 種類: [TYPE] チャンネル: [CHANNEL] 中心: [CENTER] 反転: [INVERT] 混合: [MIX] %",
+    "labels": {
+      "COSTUME": "コスチューム",
+      "VALUE": "値",
+      "TYPE": "種類",
+      "CHANNEL": "チャンネル",
+      "CENTER": "中心",
+      "INVERT": "反転",
+      "MIX": "混合"
+    }
+  }
+}

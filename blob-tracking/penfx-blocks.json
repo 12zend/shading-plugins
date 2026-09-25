@@ -1,0 +1,108 @@
+{
+  "format": "shading.app/penfx-shader",
+  "version": 2,
+  "id": "blob-tracking",
+  "name": "Blob Tracking",
+  "blocks": [
+    {
+      "id": "blob",
+      "name": "blob",
+      "text": "blob [MODE] key: [KEY] threshold: [THRESHOLD] blur: [BLUR] min: [MIN] % max: [MAX] % boxes: [SHAPE] color: [COLOR] width: [WIDTH] opacity: [OPACITY] % fill: [FILL] % markers: [MARKER]",
+      "opcode": "blob",
+      "blockType": "command",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "blob"
+      },
+      "inputs": [
+        {
+          "id": "MODE",
+          "label": "mode",
+          "type": "menu",
+          "items": [
+            "bright",
+            "dark",
+            "color",
+            "motion",
+            "alpha"
+          ],
+          "defaultValue": "bright"
+        },
+        {
+          "id": "KEY",
+          "label": "key",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "THRESHOLD",
+          "label": "threshold",
+          "type": "number",
+          "defaultValue": 50
+        },
+        {
+          "id": "BLUR",
+          "label": "blur",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIN",
+          "label": "min",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MAX",
+          "label": "max",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "SHAPE",
+          "label": "shape",
+          "type": "menu",
+          "items": [
+            "rectangle",
+            "ellipse"
+          ],
+          "defaultValue": "rectangle"
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#00ffff"
+        },
+        {
+          "id": "WIDTH",
+          "label": "width",
+          "type": "number",
+          "defaultValue": 2
+        },
+        {
+          "id": "OPACITY",
+          "label": "opacity",
+          "type": "number",
+          "defaultValue": 100
+        },
+        {
+          "id": "FILL",
+          "label": "fill",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MARKER",
+          "label": "marker",
+          "type": "menu",
+          "items": [
+            "false",
+            "true"
+          ],
+          "defaultValue": "true"
+        }
+      ]
+    }
+  ]
+}

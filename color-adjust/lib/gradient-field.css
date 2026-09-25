@@ -1,0 +1,207 @@
+/* Gradient editor for the gradation overlay block. */
+.shading-plugin-color-adjust-gradient-picker {
+    width: min(30rem, calc(100vw - 2rem));
+    max-height: min(32rem, calc(100vh - 4rem));
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: calc(0.25rem * 2);
+    background: var(--ui-modal-background);
+    color: var(--text-primary);
+    font-family: inherit;
+}
+
+.shading-plugin-color-adjust-gradient-header {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.9rem 1rem 0.7rem;
+}
+
+.shading-plugin-color-adjust-gradient-heading {
+    margin: 0 0 0.18rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.shading-plugin-color-adjust-gradient-helper {
+    margin: 0;
+    color: var(--ui-text-primary-transparent);
+    font-size: 0.7rem;
+    line-height: 1.35;
+}
+
+.shading-plugin-color-adjust-gradient-close-button,
+.shading-plugin-color-adjust-gradient-add-button,
+.shading-plugin-color-adjust-gradient-remove-button {
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+}
+
+.shading-plugin-color-adjust-gradient-close-button {
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 0.25rem;
+    background: transparent;
+    color: var(--ui-text-primary-transparent);
+}
+
+.shading-plugin-color-adjust-gradient-close-button:hover {
+    background: var(--ui-tertiary);
+    color: var(--text-primary);
+}
+
+.shading-plugin-color-adjust-gradient-close-icon {
+    width: 1.05rem;
+    height: 1.05rem;
+}
+
+.shading-plugin-color-adjust-gradient-preview {
+    min-height: 4.5rem;
+    flex: 0 0 auto;
+    margin: 0 1rem 0.8rem;
+    border: 1px solid var(--ui-black-transparent);
+    border-radius: 0.25rem;
+    background: linear-gradient(90deg, #000000, #ffffff);
+    box-shadow: 0 0.25rem 0.7rem rgba(25, 36, 70, 0.12);
+}
+
+.shading-plugin-color-adjust-gradient-stops {
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding: 0 1rem 0.8rem;
+    overflow-y: auto;
+}
+
+.shading-plugin-color-adjust-gradient-stop {
+    min-height: 2.5rem;
+    display: grid;
+    grid-template-columns: 3.6rem 2.1rem minmax(5rem, 1fr) 2.6rem auto;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.shading-plugin-color-adjust-gradient-stop-label,
+.shading-plugin-color-adjust-gradient-position-label {
+    color: var(--ui-text-primary-transparent);
+    font-size: 0.68rem;
+    line-height: 1;
+}
+
+.shading-plugin-color-adjust-gradient-position-label {
+    text-align: right;
+}
+
+.shading-plugin-color-adjust-gradient-color-input {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.12rem;
+    border: 1px solid var(--ui-black-transparent);
+    border-radius: 0.25rem;
+    background: var(--ui-white);
+    cursor: pointer;
+}
+
+.shading-plugin-color-adjust-gradient-position-input {
+    width: 100%;
+    accent-color: #6b56d9;
+}
+
+.shading-plugin-color-adjust-gradient-add-button {
+    min-height: 2rem;
+    padding: 0 0.75rem;
+    border-radius: 0.25rem;
+    background: #6b56d9;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.shading-plugin-color-adjust-gradient-add-button:hover {
+    background: #5945c2;
+}
+
+.shading-plugin-color-adjust-gradient-add-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+.shading-plugin-color-adjust-gradient-remove-button {
+    min-height: 1.8rem;
+    padding: 0 0.45rem;
+    border-radius: 0.25rem;
+    background: transparent;
+    color: var(--ui-text-primary-transparent);
+    font-size: 0.65rem;
+}
+
+.shading-plugin-color-adjust-gradient-remove-button:hover {
+    background: var(--error-light);
+    color: var(--error-primary);
+}
+
+.shading-plugin-color-adjust-gradient-footer {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    padding: 0 1rem 1rem;
+}
+
+.shading-plugin-color-adjust-gradient-close-button:focus-visible,
+.shading-plugin-color-adjust-gradient-add-button:focus-visible,
+.shading-plugin-color-adjust-gradient-remove-button:focus-visible,
+.shading-plugin-color-adjust-gradient-color-input:focus-visible,
+.shading-plugin-color-adjust-gradient-position-input:focus-visible {
+    outline: 3px solid #a49af0;
+    outline-offset: 2px;
+}
+
+@media (max-width: 36rem) {
+    .shading-plugin-color-adjust-gradient-picker {
+        width: min(calc(100vw - 1rem), 30rem);
+    }
+
+    .shading-plugin-color-adjust-gradient-header {
+        padding: 0.75rem;
+    }
+
+    .shading-plugin-color-adjust-gradient-helper {
+        display: none;
+    }
+
+    .shading-plugin-color-adjust-gradient-preview {
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+    }
+
+    .shading-plugin-color-adjust-gradient-stops {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+
+    .shading-plugin-color-adjust-gradient-stop {
+        grid-template-columns: 3.2rem 2.1rem minmax(4rem, 1fr) 2.4rem;
+    }
+
+    .shading-plugin-color-adjust-gradient-remove-button {
+        grid-column: 3 / -1;
+        justify-self: end;
+    }
+
+    .shading-plugin-color-adjust-gradient-footer {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+}

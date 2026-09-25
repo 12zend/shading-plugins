@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "lens",
+  "name": "Lens & Frame",
+  "version": "1.0.0",
+  "description": "Chromatic aberration, lens distortion, vignette, framing guides, zoom and depth fog.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "レンズ・フレーム",
+      "description": "色収差・レンズ歪み・ビネット・構図ガイド・フレーム・ズーム・深度フォグ。"
+    }
+  }
+}

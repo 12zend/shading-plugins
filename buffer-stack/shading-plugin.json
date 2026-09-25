@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "buffer-stack",
+  "name": "Buffer Stack",
+  "version": "1.0.0",
+  "description": "Accumulate frames for trails, long exposure and echo effects.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "バッファースタック",
+      "description": "フレームを蓄積して残像・長時間露光・エコーを作る。"
+    }
+  }
+}

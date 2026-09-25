@@ -1,0 +1,57 @@
+{
+  "gaussian-blur": {
+    "name": "ガウスぼかし",
+    "text": "ガウスぼかし 種類: [TYPE] 値: [VALUE] 混合: [MIX] %",
+    "labels": {
+      "TYPE": "種類",
+      "VALUE": "値",
+      "MIX": "混合"
+    }
+  },
+  "directional-blur": {
+    "name": "方向ぼかし",
+    "text": "方向ぼかし 向き: [DIR] 値: [VALUE] 混合: [MIX] %",
+    "labels": {
+      "DIR": "向き",
+      "VALUE": "値",
+      "MIX": "混合"
+    }
+  },
+  "radial-blur": {
+    "name": "放射ぼかし",
+    "text": "放射ぼかし 種類: [TYPE] 値: [VALUE] 中心 x: [X] y: [Y] 混合: [MIX] %",
+    "labels": {
+      "TYPE": "種類",
+      "VALUE": "値",
+      "X": "x",
+      "Y": "y",
+      "MIX": "混合"
+    }
+  },
+  "lens-blur": {
+    "name": "レンズぼかし",
+    "text": "レンズぼかし 半径: [RADIUS] 形状: [SHAPE] 回転: [ROTATION] 混合: [MIX] %",
+    "labels": {
+      "RADIUS": "半径",
+      "SHAPE": "形状",
+      "ROTATION": "回転",
+      "MIX": "混合"
+    }
+  },
+  "depth-of-field": {
+    "name": "被写界深度",
+    "text": "被写界深度 ピント: [FOCUS] 範囲: [RANGE] 絞り: [APERTURE] 最大ぼかし: [MAXBLUR] 近: [NEAR] % 遠: [FAR] % 輪郭の柔らかさ: [EDGE] 形状: [SHAPE] 回転: [ROTATION] 混合: [MIX] %",
+    "labels": {
+      "FOCUS": "ピント",
+      "RANGE": "範囲",
+      "APERTURE": "絞り",
+      "MAXBLUR": "最大ぼかし",
+      "NEAR": "近",
+      "FAR": "遠",
+      "EDGE": "輪郭",
+      "SHAPE": "形状",
+      "ROTATION": "回転",
+      "MIX": "混合"
+    }
+  }
+}
