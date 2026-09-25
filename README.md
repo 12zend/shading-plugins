@@ -39,6 +39,30 @@ before the split open unchanged once the needed plugins are installed; shading.a
 
 or simply `zip -r blur.zip blur`. The zip may contain the folder itself or only its contents.
 
+## Signing / 署名
+
+Every plugin folder contains `shading-plugin.sig`. shading.app shows signed plugins as official, marks a changed
+official plugin as having an invalid signature, and only installs signed plugins from its `/install` page.
+**Re-sign after changing any file in a plugin**, or the shading tests and the install page will reject it.
+
+各プラグインには `shading-plugin.sig` が入っています。shading.app は署名済みのものを「公式・署名済み」と表示し、
+改変されたものを「署名が無効」として警告します。`/install` ページは署名済みのものしかインストールしません。
+**プラグインのファイルを変更したら、必ず署名し直してください。**
+
+```sh
+node scripts/sign.mjs              # sign every plugin / 全プラグインに署名
+node scripts/sign.mjs blur         # sign one plugin / 1つだけ署名
+node scripts/sign.mjs --check      # verify without the private key / 秘密鍵なしで検証
+```
+
+The private key is never committed. It is read from `SHADING_PLUGIN_SIGNING_KEY` (path to a PKCS#8 PEM) or
+`~/.config/shading/plugin-signing-key.pem`. The public keys are in `signing-keys.json` and must match `OFFICIAL_KEYS`
+in shading's `src/lib/plugins/signature.js`. To rotate keys, run `node scripts/sign.mjs --generate-key` (after moving
+the old key away), add the new key to both places under a new id, and re-sign.
+
+秘密鍵はコミットしません。`SHADING_PLUGIN_SIGNING_KEY`（PEM のパス）か `~/.config/shading/plugin-signing-key.pem`
+から読み込みます。公開鍵は `signing-keys.json` と shading 本体の `OFFICIAL_KEYS` の両方に同じものを登録します。
+
 ## Writing plugins / プラグインの作り方
 
 A plugin is a folder with `shading-plugin.json` and a CommonJS `main.js` exporting `activate(shading)`. The API,

@@ -1,0 +1,10 @@
+{
+  "keys": {
+    "official-2026": {
+      "kty": "EC",
+      "crv": "P-256",
+      "x": "9epiCdiGTgjCRJG2FPyt18883OTXxExI28b6TkpKvZM",
+      "y": "-d61jO8dR1yhrtI1zJVOjQWVWrmMlnbZMv_y6Tl_Eeg"
+    }
+  }
+}
