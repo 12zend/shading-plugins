@@ -20,18 +20,19 @@ const install = ({ Engine }) => {
     gl.bindFramebuffer(gl.FRAMEBUFFER, this.framebuffers[0]);
     gl.readPixels(0, 0, width, height, gl.RGBA, gl.UNSIGNED_BYTE, source);
     const frame = { data: source, height, width };
+    const scaledOptions = Object.assign({}, options, { pixelScale: this.pixelScale || 1 });
     // detectMovieBlobs never mutates its inputs, so the baseline buffer can be
     // refilled in place once detection finishes instead of copying every frame.
     const previousBlobFrame = this.previousBlobFrame;
     const staleBaseline = !previousBlobFrame || !previousBlobFrame.data ||
     previousBlobFrame.data.length !== pixelLength;
-    const boxes = detectMovieBlobs(frame, options, staleBaseline ? null : previousBlobFrame);
+    const boxes = detectMovieBlobs(frame, scaledOptions, staleBaseline ? null : previousBlobFrame);
     this._storeBlobBaseline(source);
     if (!boxes.length) return;
     if (!this.blobOutput || this.blobOutput.length !== pixelLength) {
       this.blobOutput = new Uint8Array(pixelLength);
     }
-    const output = drawMovieBlobOverlay(frame, boxes, options, this.blobOutput);
+    const output = drawMovieBlobOverlay(frame, boxes, scaledOptions, this.blobOutput);
     const direct = this._canRenderDirectly(blendMode);
     if (!direct) this._ensureSecondaryBuffer();
     gl.bindTexture(gl.TEXTURE_2D, direct ? skin._texture : this.textures[1]);

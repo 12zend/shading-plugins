@@ -195,7 +195,11 @@ class GenshadeRenderer {
                 boundSamplers[unit]={saved:gl.getParameter(gl.SAMPLER_BINDING)};
                 gl.bindSampler(unit,null);
             }
-            const effect = this.effect(descriptor.file, engine.width, engine.height);
+            // ReShade effects measure everything in buffer pixels, so they run at the stage size: the preview,
+            // full screen and export then show the same result instead of one that changes with the display.
+            const stageWidth = Math.max(1, Math.round(engine.resolution[0] || engine.width));
+            const stageHeight = Math.max(1, Math.round(engine.resolution[1] || engine.height));
+            const effect = this.effect(descriptor.file, stageWidth, stageHeight);
             const technique = effect.module.techniques.find(t => t.name === descriptor.technique);
             if (!technique) throw new Error(`Technique not found: ${descriptor.technique}`);
             this.uniforms(effect, settings, context);
@@ -204,7 +208,8 @@ class GenshadeRenderer {
                 precision highp float; varying vec2 v_uv; uniform sampler2D u_image;
                 void main() { vec4 p = texture2D(u_image, v_uv); gl_FragColor = vec4(p.a > 0.00001 ? p.rgb / p.a : vec3(0.0), p.a); }
             `);
-            engine._render(this.straightProgram, front.framebuffer, [{name:'u_image',texture:engine.textures[0]}], {}, []);
+            engine._render(this.straightProgram, front.framebuffer, [{name:'u_image',texture:engine.textures[0]}], {}, [],
+                [front.width, front.height]);
             const depth = effect.targets.get('$depth');
             this.prepareDepth(depth, context.depth);
             // Like ReShade, the first pass of a technique that uses the stencil clears it.
@@ -330,7 +335,7 @@ class GenshadeRenderer {
                 gl_FragColor=vec4(vec3(compatible),1.0); }
         `);
         engine._render(this.depthProgram,target.framebuffer,[{name:'u_image',texture:engine._uploadDepthBuffer(depth)}],
-            {u_planes:[Math.max(0.0001,depth.near||0.1),depth.far||1000]},[]);
+            {u_planes:[Math.max(0.0001,depth.near||0.1),depth.far||1000]},[],[target.width,target.height]);
     }
 }
 module.exports = GenshadeRenderer;

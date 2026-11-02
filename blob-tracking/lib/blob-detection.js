@@ -2,6 +2,11 @@
 
 const clamp = (value, minimum, maximum) => Math.max(minimum, Math.min(maximum, value));
 
+const stagePixelScale = options => {
+    const scale = Number(options && options.pixelScale);
+    return Number.isFinite(scale) && scale > 0 ? scale : 1;
+};
+
 const normalizeFrame = frame => {
     if (!frame || !frame.data) return null;
     const width = Math.max(1, Math.round(Number(frame.width) || 0));
@@ -92,7 +97,9 @@ const makeMask = (frame, options, previousFrame) => {
     const mode = ['alpha', 'bright', 'color', 'dark', 'motion'].includes(requestedMode) ?
         requestedMode : 'dark';
     const threshold = clamp(Number(options.threshold) || 0, 0, 255);
-    const blurRadius = clamp(Math.round(Number(options.blurRadius) || 0), 0, 100);
+    // Sizes are in stage pixels; pixelScale converts them to pixels of a frame rendered above or below stage size.
+    const pixelScale = stagePixelScale(options);
+    const blurRadius = clamp(Math.round((Number(options.blurRadius) || 0) * pixelScale), 0, Math.round(100 * pixelScale));
     const targetColor = Array.isArray(options.targetColor) || ArrayBuffer.isView(options.targetColor) ?
         options.targetColor : [1, 1, 1];
     const mask = new Uint8Array(frame.width * frame.height);
@@ -301,7 +308,7 @@ const detectMovieBlobs = (inputFrame, options = {}, previousInputFrame = null) =
     const previousFrame = normalizeFrame(previousInputFrame);
     let mask = makeMask(frame, options, previousFrame);
     if (String(options.mode).toLowerCase() === 'motion') {
-        mask = dilateMask(mask, frame.width, frame.height, 2);
+        mask = dilateMask(mask, frame.width, frame.height, Math.max(1, Math.round(2 * stagePixelScale(options))));
     }
     const frameDimension = Math.max(frame.width, frame.height, 1);
     const minimumSize = clamp(Number(options.minimumSize) || 0, 0, 100);
@@ -346,7 +353,9 @@ const drawMovieBlobOverlay = (inputFrame, boxes, options = {}, outputBuffer = nu
     if (!Array.isArray(boxes) || !boxes.length) return output;
     const overlay = new Uint8Array(frame.width * frame.height);
     const shape = String(options.shape).toLowerCase() === 'ellipse' ? 'ellipse' : 'rectangle';
-    const strokeWidth = clamp(Math.round(Number(options.strokeWidth) || 1), 1, Math.max(frame.width, frame.height));
+    const pixelScale = stagePixelScale(options);
+    const strokeWidth = clamp(Math.round((Number(options.strokeWidth) || 1) * pixelScale), 1,
+        Math.max(frame.width, frame.height));
     const marker = options.marker === true;
     const fillOpacity = clamp(Number(options.fillOpacity) || 0, 0, 1);
     const strokeOpacityValue = Number(options.strokeOpacity);
@@ -391,7 +400,7 @@ const drawMovieBlobOverlay = (inputFrame, boxes, options = {}, outputBuffer = nu
         if (marker) {
             const cx = clamp(Math.floor(centerX), 0, frame.width - 1);
             const cy = clamp(Math.floor(centerY), 0, frame.height - 1);
-            const markerRadius = Math.max(3, strokeWidth * 2);
+            const markerRadius = Math.max(Math.round(3 * pixelScale), strokeWidth * 2);
             for (let delta = -markerRadius; delta <= markerRadius; delta++) {
                 const horizontalX = cx + delta;
                 const verticalY = cy + delta;
