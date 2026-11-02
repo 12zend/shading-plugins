@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "lyric-motion",
+  "name": "Lyric Motion",
+  "version": "1.0.0",
+  "description": "Lyrics that fly in character by character, with elastic easing, jitter and shake (Objects category).",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "リリックモーション",
+      "description": "歌詞を1文字ずつ飛び込ませるリリックモーション。elastic イージング、ランダムなずれ、揺れ付き（レイヤーカテゴリ）。"
+    }
+  }
+}
