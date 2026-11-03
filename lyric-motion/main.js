@@ -49,7 +49,7 @@ const fontValue = (name, font) => (
 
 const toolboxXML = `
 <block type="objects_${OPCODE}">
-    <value name="CHAR"><shadow type="text"><field name="TEXT">歌詞が飛び込む</field></shadow></value>
+    <value name="CHAR"><shadow type="text"><field name="TEXT">Lyric motion</field></shadow></value>
     ${fontValue('FONT', DEFAULT_FONT)}
     ${fontValue('KANJI_FONT', DEFAULT_KANJI_FONT)}
     ${Object.keys(NUMBER_DEFAULTS).map(numberValue).join('')}
@@ -141,7 +141,7 @@ exports.activate = shading => {
             blockType: BlockType.COMMAND,
             text,
             arguments: {
-                CHAR: {type: ArgumentType.STRING, defaultValue: '歌詞が飛び込む'},
+                CHAR: {type: ArgumentType.STRING, defaultValue: 'Lyric motion'},
                 FONT: {type: ArgumentType.STRING, menu: FONT_MENU, defaultValue: DEFAULT_FONT},
                 KANJI_FONT: {type: ArgumentType.STRING, menu: FONT_MENU, defaultValue: DEFAULT_KANJI_FONT},
                 RADIUS: number('RADIUS'),
