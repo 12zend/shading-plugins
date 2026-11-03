@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "physics",
+  "name": "Physics",
+  "version": "1.0.0",
+  "description": "3D rigid-body physics for simulations (Rapier, deterministic build): worlds, bodies, forces, collisions and poses for drawing.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": ["wasm", "network"],
+  "locales": {
+    "ja": {
+      "name": "物理演算",
+      "description": "シミュレーションで使う 3D 剛体物理（Rapier の決定的ビルド）。ワールド、剛体、力、衝突、描画用の姿勢。"
+    }
+  }
+}
