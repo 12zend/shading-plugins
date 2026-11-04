@@ -3,7 +3,7 @@
   "formatVersion": 1,
   "id": "lyric-motion",
   "name": "Lyric Motion",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Lyrics that fly in character by character, with elastic easing, jitter and shake (Objects category).",
   "author": "shading.app",
   "license": "GPL-3.0",
