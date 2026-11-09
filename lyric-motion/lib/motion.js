@@ -25,6 +25,17 @@ const isVertical = direction => String(direction || '').toLowerCase() === DIRECT
 const isKanji = char => KANJI.test(char);
 
 /**
+ * Read a list of per-character numbers such as "0 10 5 -3 4" (spaces, commas or both separate them).
+ * @param {*} value Text, a number or an array.
+ * @returns {Array<number>} The numbers; an entry that is not a number is 0.
+ */
+const parseOffsets = value => {
+    if (Array.isArray(value)) return value.map(entry => finite(entry));
+    if (value === null || typeof value === 'undefined') return [];
+    return String(value).split(/[\s,、，]+/u).filter(part => part !== '').map(part => finite(part));
+};
+
+/**
  * Place the characters of a line around (0, 0).
  * @param {object} options Layout options.
  * @param {string} options.text The lyric.
@@ -37,6 +48,9 @@ const isKanji = char => KANJI.test(char);
  * @param {string} options.direction 'horizontal reading' or 'vertical reading'.
  * @param {number} options.em Height of a character at size 100.
  * @param {Function} options.measure (font, char) => width at size 100 (0 when unknown).
+ * @param {*} [options.offsetX] Per drawn character, stage units added to x (see parseOffsets).
+ * @param {*} [options.offsetY] Per drawn character, stage units added to y.
+ * @param {*} [options.offsetSize] Per drawn character, added to its size. It does not change the spacing.
  * @returns {Array<object>} {char, font, size, x, y, rotation, index} per drawn character; index counts only them.
  */
 const layoutLine = options => {
@@ -61,6 +75,9 @@ const layoutLine = options => {
         (spacing * Math.max(0, items.length - 1));
     let cursor = -length / 2;
     let index = 0;
+    const offsetX = parseOffsets(options.offsetX);
+    const offsetY = parseOffsets(options.offsetY);
+    const offsetSize = parseOffsets(options.offsetSize);
     const glyphs = [];
     for (const item of items) {
         const center = cursor + (item.advance / 2);
@@ -69,9 +86,9 @@ const layoutLine = options => {
         glyphs.push({
             char: item.char,
             font: item.font,
-            size: item.size,
-            x: vertical ? 0 : center,
-            y: vertical ? -center : 0,
+            size: Math.max(0, item.size + (offsetSize[index] || 0)),
+            x: (vertical ? 0 : center) + (offsetX[index] || 0),
+            y: (vertical ? -center : 0) + (offsetY[index] || 0),
             rotation: vertical && TURNED_IN_VERTICAL.has(item.char) ? -90 : 0,
             index: index++
         });
@@ -139,5 +156,6 @@ module.exports = {
     isKanji,
     layoutLine,
     normalizeEase,
+    parseOffsets,
     random
 };

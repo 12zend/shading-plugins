@@ -23,7 +23,7 @@ shading.app の公式プラグインです。フォルダ1つが1つのプラグ
 | [`buffer-stack`](buffer-stack) | Buffer Stack / バッファースタック | frame accumulation (trails, long exposure) |
 | [`genshade`](genshade) | Genshade / ReShade | ReShade FX effects compiled to WebGL (compiler and textures included, ~45 MB) |
 | [`easy`](easy) | Easy Looks / かんたんルック | one-click looks built from the plugins above |
-| [`lyric-motion`](lyric-motion) | Lyric Motion / リリックモーション | Objects block that flies lyrics in character by character (elastic Power/Expo/Circ Out easing, jitter, shake, vertical reading) |
+| [`lyric-motion`](lyric-motion) | Lyric Motion / リリックモーション | Objects block that flies lyrics in character by character (elastic Power/Expo/Circ Out easing, jitter, shake, vertical reading, text color, per-character x/y/size offsets) |
 | [`physics`](physics) | Physics / 物理演算 | Simulation blocks for 3D rigid bodies (Rapier, deterministic build, ~4.4 MB): worlds, bodies, forces, impulses, kinematic bodies, collisions, and poses for drawing at any time (works in local time and motion blur) |
 
 These effects used to be built into shading.app. Their blocks keep the same opcodes and menu names, so projects made
