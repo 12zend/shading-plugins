@@ -1,0 +1,18 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "c-physics",
+  "name": "C Physics",
+  "version": "1.0.0",
+  "description": "A C-shaped Objects block that splits what it draws into pieces (like blob detection) and lets every piece fall with 2D rigid-body physics from a start time.",
+  "author": "shading.app",
+  "license": "GPL-3.0",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "物理演算ブロック",
+      "description": "C 型のレイヤーブロック。中で描いたものをブロブ検出と同じ方法で自動分解し、指定した時間から各パーツに 2D 剛体物理（重力・反発・摩擦・空気抵抗）をかけます。"
+    }
+  }
+}
