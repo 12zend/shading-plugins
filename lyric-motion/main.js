@@ -201,8 +201,12 @@ exports.activate = shading => {
         toolboxXML
     });
 
-    // The generated block is one long line; break it into rows like the draw block.
+    // The generated block is one long line; break it into rows like the draw block. The font menus open the draw
+    // block's media picker with only fonts (engines without it keep the plain dropdown).
     shading.blocks.define('objects', ScratchBlocks => {
+        if (typeof shading.ui.defineFontMenuBlock === 'function') {
+            shading.ui.defineFontMenuBlock(ScratchBlocks, {menu: FONT_MENU});
+        }
         const definition = ScratchBlocks.Blocks[`objects_${OPCODE}`];
         if (!definition || definition.lyricMotionRows) return;
         const init = definition.init;
