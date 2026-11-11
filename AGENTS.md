@@ -64,6 +64,22 @@ Existing blocks with deliberately documented atomic behavior are compatibility e
 - The block rules above apply to plugin blocks. Plugin tests load the official plugins from `../shading-plugins` (or `SHADING_PLUGINS_DIR`).
 - Keep the legacy Looks opcodes and `penfx_menu_shader_penfx_builtins_*` menu names stable; saved projects reference them.
 
+## Signing plugins (REQUIRED, done by the agent)
+
+Every plugin folder carries `shading-plugin.sig`. Changing any file in a plugin invalidates it, and shading.app's tests
+and `/install` page then reject the plugin. Re-signing is part of the task; do it yourself instead of leaving it to the
+user.
+
+1. Commit the plugin changes first (`feat(...)`, `fix(...)`, ...).
+2. Sign only the plugins you changed: `node scripts/sign.mjs <plugin-id> [<plugin-id> ...]`.
+3. Verify with `node scripts/sign.mjs --check` (all signatures must be valid).
+4. Commit only the changed `<plugin-id>/shading-plugin.sig` files as `Sign the <plugin-id>` (one commit, listing every
+   signed plugin).
+
+The private key is outside the repository (`SHADING_PLUGIN_SIGNING_KEY` or `~/.config/shading/plugin-signing-key.pem`).
+Never copy, print or commit it. If it is missing or signing fails, report that instead of committing an unsigned
+plugin as finished.
+
 ## Core workflow
 1. Before editing, read the relevant documentation and inspect the repository, current branch, `git status`, and recent commits.
 2. Break the requested work into small, independently verifiable milestones. Prefer milestones that leave the repository in a working state.
