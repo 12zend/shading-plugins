@@ -520,5 +520,12 @@
       "REPEAT": "繰り返し回数",
       "MIX": "混合"
     }
+  },
+  "group-dot-waves-circular-dotwave": {
+    "name": "円形ドットウェーブ",
+    "text": "円形ドットウェーブ 混合: [MIX] %",
+    "labels": {
+      "MIX": "混合"
+    }
   }
 }

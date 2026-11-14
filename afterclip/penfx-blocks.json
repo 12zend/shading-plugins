@@ -2807,6 +2807,24 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "group-dot-waves-circular-dotwave",
+      "name": "Circular DotWave",
+      "text": "circular dotwave mix: [MIX] %",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "afterclipGroupDotWavesCircularDotwave"
+      },
+      "separatorBefore": true,
+      "inputs": [
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
     }
   ]
 }
