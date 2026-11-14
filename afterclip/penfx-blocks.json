@@ -275,6 +275,82 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "repeat-gradient-linear-repeat",
+      "name": "Gradient Linear Repeat",
+      "text": "gradient linear repeat rotation: [ROTATION] offset x: [OFFSET_X] y: [OFFSET_Y] repeat: [REPEAT] repeat scale: [REPEATSCALE] blend order: [BLENDORDER] start color: [STARTCOLOR] end color: [ENDCOLOR] mix: [MIX] %",
+      "file": "shaders/repeat-gradient-linear-repeat.glsl",
+      "inputs": [
+        {
+          "id": "ROTATION",
+          "label": "rotation",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Rotation"
+        },
+        {
+          "id": "OFFSET_X",
+          "label": "offset x",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Offset",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "OFFSET_Y",
+          "label": "offset y",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Offset",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "REPEAT",
+          "label": "repeat",
+          "type": "number",
+          "defaultValue": 100,
+          "uniform": "u_Repeat"
+        },
+        {
+          "id": "REPEATSCALE",
+          "label": "repeat scale",
+          "type": "number",
+          "defaultValue": 2.31,
+          "uniform": "u_RepeatScale"
+        },
+        {
+          "id": "BLENDORDER",
+          "label": "blend order",
+          "type": "integer",
+          "defaultValue": 1,
+          "uniform": "u_BlendOrder"
+        },
+        {
+          "id": "STARTCOLOR",
+          "label": "start color",
+          "type": "color",
+          "defaultValue": "#ff0000",
+          "uniform": "u_StartColor"
+        },
+        {
+          "id": "ENDCOLOR",
+          "label": "end color",
+          "type": "color",
+          "defaultValue": "#000000",
+          "uniform": "u_EndColor"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }

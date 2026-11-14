@@ -16,3 +16,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `repeat-circle-dot-wave` | Circle Dot Wave | `plugins/afterclip/shaders/afterclip-repeat-circle-dot-wave.glsl` (`Shaders/Repeat/Circle Dot Wave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `repeat-dot-wave` | Dot Wave | `plugins/afterclip/shaders/afterclip-repeat-dot-wave.glsl` (`Shaders/Repeat/Dot Wave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `repeat-duplicate-extended` | Duplicate (Extended) | `plugins/afterclip/shaders/afterclip-repeat-duplicate-extended.glsl` (`Shaders/Repeat/Duplicate (Extended).txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `repeat-gradient-linear-repeat` | Gradient Linear Repeat | `plugins/afterclip/shaders/afterclip-repeat-gradient-linear-repeat.glsl` (`Shaders/Repeat/Gradient Linear Repeat.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
