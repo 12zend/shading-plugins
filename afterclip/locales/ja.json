@@ -133,5 +133,29 @@
       "COLOR": "色",
       "MIX": "混合"
     }
+  },
+  "shape-chevron": {
+    "name": "シェブロン",
+    "text": "シェブロン 不透明度: [OPACITY] 拡大率 x: [SCALE_X] y: [SCALE_Y] 回転: [ROTATION] ずらし: [OFFSET] ずらし2: [OFFSET2] 余白: [MARGIN] 縞の幅: [STRIPEWIDTH] 縞の余白: [STRIPEMARGIN] 縞のずらし: [STRIPEOFFSET] 縞の回転: [STRIPEROTATION] 模様の回転: [PATTERNROTATION] 模様の拡大率 x: [PATTERNSCALE_X] y: [PATTERNSCALE_Y] 位置 x: [POSITION_X] y: [POSITION_Y] 色: [COLOR] 混合: [MIX] %",
+    "labels": {
+      "OPACITY": "不透明度",
+      "SCALE_X": "拡大率x",
+      "SCALE_Y": "拡大率y",
+      "ROTATION": "回転",
+      "OFFSET": "ずらし",
+      "OFFSET2": "ずらし2",
+      "MARGIN": "余白",
+      "STRIPEWIDTH": "縞の幅",
+      "STRIPEMARGIN": "縞の余白",
+      "STRIPEOFFSET": "縞のずらし",
+      "STRIPEROTATION": "縞の回転",
+      "PATTERNROTATION": "模様の回転",
+      "PATTERNSCALE_X": "模様の拡大率x",
+      "PATTERNSCALE_Y": "模様の拡大率y",
+      "POSITION_X": "位置x",
+      "POSITION_Y": "位置y",
+      "COLOR": "色",
+      "MIX": "混合"
+    }
   }
 }
