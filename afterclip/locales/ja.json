@@ -102,5 +102,16 @@
       "BLENDORDER": "重ね順",
       "MIX": "混合"
     }
+  },
+  "repeat-stroke-extended": {
+    "name": "縁取り（拡張）",
+    "text": "縁取り（拡張） 幅: [WIDTH] 色相: [HUE] 色: [COLOR] 反復回数: [ITERATIONS] 混合: [MIX] %",
+    "labels": {
+      "WIDTH": "幅",
+      "HUE": "色相",
+      "COLOR": "色",
+      "ITERATIONS": "反復回数",
+      "MIX": "混合"
+    }
   }
 }

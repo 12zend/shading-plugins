@@ -544,6 +544,50 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "repeat-stroke-extended",
+      "name": "Stroke (Extended)",
+      "text": "stroke (extended) width: [WIDTH] hue: [HUE] color: [COLOR] iterations: [ITERATIONS] mix: [MIX] %",
+      "file": "shaders/repeat-stroke-extended.glsl",
+      "inputs": [
+        {
+          "id": "WIDTH",
+          "label": "width",
+          "type": "number",
+          "defaultValue": 0.66,
+          "uniform": "u_Width"
+        },
+        {
+          "id": "HUE",
+          "label": "hue",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Hue"
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#ffffff",
+          "uniform": "u_Color"
+        },
+        {
+          "id": "ITERATIONS",
+          "label": "iterations",
+          "type": "integer",
+          "defaultValue": 20,
+          "uniform": "u_Iterations"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }
