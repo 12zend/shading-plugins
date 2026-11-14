@@ -2680,6 +2680,29 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "warp-mirror-fixed-bugs",
+      "name": "Mirror (Fixed)",
+      "text": "mirror (fixed) segments: [SEGMENTS] mix: [MIX] %",
+      "file": "shaders/warp-mirror-fixed-bugs.glsl",
+      "inputs": [
+        {
+          "id": "SEGMENTS",
+          "label": "segments",
+          "type": "number",
+          "defaultValue": 6,
+          "uniform": "u_Segments"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }

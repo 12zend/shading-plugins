@@ -41,3 +41,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `shape-triangle` | Triangle | `plugins/afterclip/shaders/afterclip-shape-triangle.glsl` (`Shaders/Shape/Triangle.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `warp-fractal-noise` | Fractal Noise | `plugins/afterclip/shaders/afterclip-warp-fractal-noise.glsl` (`Shaders/Warp/Fractal Noise.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `warp-fractal-warp` | Fractal Warp | `plugins/afterclip/shaders/afterclip-warp-fractal-warp.glsl` (`Shaders/Warp/Fractal Warp.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `warp-mirror-fixed-bugs` | Mirror (Fixed) | `plugins/afterclip/shaders/afterclip-warp-mirror-fixed-bugs.glsl` (`Shaders/Warp/Mirror (Fixed Bugs).txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

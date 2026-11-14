@@ -483,5 +483,13 @@
       "REPEATTYPE": "端の処理",
       "MIX": "混合"
     }
+  },
+  "warp-mirror-fixed-bugs": {
+    "name": "ミラー（修正版）",
+    "text": "ミラー（修正版） 分割数: [SEGMENTS] 混合: [MIX] %",
+    "labels": {
+      "SEGMENTS": "分割数",
+      "MIX": "混合"
+    }
   }
 }
