@@ -491,5 +491,12 @@
       "SEGMENTS": "分割数",
       "MIX": "混合"
     }
+  },
+  "warp-polar-coordinates": {
+    "name": "極座標",
+    "text": "極座標 混合: [MIX] %",
+    "labels": {
+      "MIX": "混合"
+    }
   }
 }

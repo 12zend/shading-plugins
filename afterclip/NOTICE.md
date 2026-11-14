@@ -42,3 +42,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `warp-fractal-noise` | Fractal Noise | `plugins/afterclip/shaders/afterclip-warp-fractal-noise.glsl` (`Shaders/Warp/Fractal Noise.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `warp-fractal-warp` | Fractal Warp | `plugins/afterclip/shaders/afterclip-warp-fractal-warp.glsl` (`Shaders/Warp/Fractal Warp.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `warp-mirror-fixed-bugs` | Mirror (Fixed) | `plugins/afterclip/shaders/afterclip-warp-mirror-fixed-bugs.glsl` (`Shaders/Warp/Mirror (Fixed Bugs).txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `warp-polar-coordinates` | Polar Coordinates | `plugins/afterclip/shaders/afterclip-warp-polar-coordinates.glsl` (`Shaders/Warp/Polar Coordinates.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

@@ -2703,6 +2703,22 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "warp-polar-coordinates",
+      "name": "Polar Coordinates",
+      "text": "polar coordinates mix: [MIX] %",
+      "file": "shaders/warp-polar-coordinates.glsl",
+      "inputs": [
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }
