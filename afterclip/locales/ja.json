@@ -92,5 +92,15 @@
       "BLENDORDER": "重ね順",
       "MIX": "混合"
     }
+  },
+  "repeat-radial-repeat": {
+    "name": "放射リピート",
+    "text": "放射リピート 繰り返し回数: [REPEAT] 間隔の角度: [WIDE] 重ね順: [BLENDORDER] 混合: [MIX] %",
+    "labels": {
+      "REPEAT": "繰り返し回数",
+      "WIDE": "間隔の角度",
+      "BLENDORDER": "重ね順",
+      "MIX": "混合"
+    }
   }
 }

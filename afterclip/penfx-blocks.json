@@ -507,6 +507,43 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "repeat-radial-repeat",
+      "name": "Radial Repeat",
+      "text": "radial repeat repeat: [REPEAT] wide: [WIDE] blend order: [BLENDORDER] mix: [MIX] %",
+      "file": "shaders/repeat-radial-repeat.glsl",
+      "inputs": [
+        {
+          "id": "REPEAT",
+          "label": "repeat",
+          "type": "number",
+          "defaultValue": 12,
+          "uniform": "u_Repeat"
+        },
+        {
+          "id": "WIDE",
+          "label": "wide",
+          "type": "number",
+          "defaultValue": 30,
+          "uniform": "u_Wide"
+        },
+        {
+          "id": "BLENDORDER",
+          "label": "blend order",
+          "type": "integer",
+          "defaultValue": 1,
+          "uniform": "u_BlendOrder"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }
