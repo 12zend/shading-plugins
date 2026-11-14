@@ -1158,6 +1158,50 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "shape-line-wave-mask",
+      "name": "Line Wave Mask",
+      "text": "line wave mask time: [TIME] delay: [DELAY] power: [POWER] step: [STEP] mix: [MIX] %",
+      "file": "shaders/shape-line-wave-mask.glsl",
+      "inputs": [
+        {
+          "id": "TIME",
+          "label": "time",
+          "type": "number",
+          "defaultValue": 0.5,
+          "uniform": "u_Time"
+        },
+        {
+          "id": "DELAY",
+          "label": "delay",
+          "type": "number",
+          "defaultValue": 0.3,
+          "uniform": "u_Delay"
+        },
+        {
+          "id": "POWER",
+          "label": "power",
+          "type": "number",
+          "defaultValue": 3,
+          "uniform": "u_Power"
+        },
+        {
+          "id": "STEP",
+          "label": "step",
+          "type": "number",
+          "defaultValue": 11,
+          "uniform": "u_Step"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }
