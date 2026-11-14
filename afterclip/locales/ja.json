@@ -542,5 +542,18 @@
     "labels": {
       "MIX": "混合"
     }
+  },
+  "group-effects-arrow": {
+    "name": "矢印エフェクト",
+    "text": "矢印エフェクト 開始: [START] 遅れ: [DELAY] 拡大率: [SCALE] 色1: [COLOR1] 色2: [COLOR2] 長さ: [LENGTH] 混合: [MIX] %",
+    "labels": {
+      "START": "開始",
+      "DELAY": "遅れ",
+      "SCALE": "拡大率",
+      "COLOR1": "色1",
+      "COLOR2": "色2",
+      "LENGTH": "長さ",
+      "MIX": "混合"
+    }
   }
 }

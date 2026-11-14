@@ -2865,6 +2865,60 @@
           "defaultValue": 100
         }
       ]
+    },
+    {
+      "id": "group-effects-arrow",
+      "name": "Arrow Effect",
+      "text": "arrow effect start: [START] delay: [DELAY] scale: [SCALE] color1: [COLOR1] color2: [COLOR2] length: [LENGTH] mix: [MIX] %",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "afterclipGroupEffectsArrow"
+      },
+      "separatorBefore": true,
+      "inputs": [
+        {
+          "id": "START",
+          "label": "start",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "DELAY",
+          "label": "delay",
+          "type": "number",
+          "defaultValue": 0.07
+        },
+        {
+          "id": "SCALE",
+          "label": "scale",
+          "type": "number",
+          "defaultValue": 1.14
+        },
+        {
+          "id": "COLOR1",
+          "label": "color1",
+          "type": "color",
+          "defaultValue": "#006cff"
+        },
+        {
+          "id": "COLOR2",
+          "label": "color2",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "LENGTH",
+          "label": "length",
+          "type": "number",
+          "defaultValue": 0.7
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
     }
   ]
 }

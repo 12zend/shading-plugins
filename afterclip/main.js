@@ -12,7 +12,11 @@ const GROUP_PROGRAMS = {
         'shaders/groups/afterclip-group-dot-waves-circular-dotwave-dotwave-warp.glsl',
     afterclipGroupWarpMirrorFixedBugs: 'shaders/groups/afterclip-warp-mirror-fixed-bugs.glsl',
     afterclipGroupRepeatHexDotWave: 'shaders/groups/afterclip-repeat-hex-dot-wave.glsl',
-    afterclipBuiltinDuplicate: 'shaders/builtins/duplicate.glsl'
+    afterclipGroupShapeArrow: 'shaders/groups/afterclip-shape-arrow.glsl',
+    afterclipGroupRepeatRadialRepeat: 'shaders/groups/afterclip-repeat-radial-repeat.glsl',
+    afterclipBuiltinDuplicate: 'shaders/builtins/duplicate.glsl',
+    afterclipBuiltinFlip: 'shaders/builtins/flip.glsl',
+    afterclipBuiltinFxaa: 'shaders/builtins/fxaa.glsl'
 };
 
 exports.activate = shading => {

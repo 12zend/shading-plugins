@@ -28,6 +28,26 @@ const duplicatePass = ({ offset = [0, 0], multiplier = [1, 1], rotation = 0, rep
   integerUniforms: ['u_repeat']
 });
 
+// Panzoid built-in "Flip".
+const flipPass = (horizontal, vertical) => ({
+  program: 'afterclipBuiltinFlip',
+  uniforms: { u_horizontal: horizontal ? 1 : 0, u_vertical: vertical ? 1 : 0 },
+  integerUniforms: ['u_horizontal', 'u_vertical']
+});
+
+// Panzoid built-in "Antialiasing" (FXAA).
+const fxaaPass = () => ({ program: 'afterclipBuiltinFxaa', uniforms: {}, integerUniforms: [] });
+
+// Panzoid expression `(1-pow(1-t,power)*(t<1))*(0<t)*scale` with t = (time - start) / length: an ease-out
+// from 0 to scale that starts at `start`.
+const easeOutFrom = (time, start, length, power, scale) => {
+  const t = (time - start) / length;
+  if (!(t > 0)) return 0;
+  if (!(t < 1)) return Number.isFinite(scale) ? scale : 0;
+  const value = (1 - Math.pow(1 - t, power)) * scale;
+  return Number.isFinite(value) ? value : 0;
+};
+
 const DOTWAVE_WARP = {
   Opacity: 1, Scale: [1, 1], Rotation: 0, Position: [0, 0], GridSize: 10, BoxScaleMin: 0, BoxScaleMax: 0.95,
   Color: [1, 1, 1]
@@ -57,7 +77,32 @@ const GROUPS = {
   duplicatePass({ offset: [-time, 0], multiplier: [5.23, 1], rotation: 0, repeat: 1 }),
   shaderPass('afterclipGroupWarpMirrorFixedBugs', { Segments: 4 }),
   duplicatePass({ offset: [0, 0], multiplier: [0.88, 0.88], rotation: 0, repeat: 0 }),
-  shaderPass('afterclipGroupGroupDotWavesCircularDotwaveDotwaveWarp', DOTWAVE_WARP)]
+  shaderPass('afterclipGroupGroupDotWavesCircularDotwaveDotwaveWarp', DOTWAVE_WARP)],
+
+  // Eight nested "Arrow" groups (Start = Delay * i, Rotation = 22.5 * i, Color1/Color2 alternating), then
+  // Radial Repeat, Flip and Antialiasing.
+  afterclipGroupEffectsArrow: (args, time) => {
+    const start = numberOr(args.START, 0);
+    const delay = numberOr(args.DELAY, 0.07);
+    const scale = numberOr(args.SCALE, 1.14);
+    const length = numberOr(args.LENGTH, 0.7);
+    const colors = [color(args.COLOR1 === undefined ? '#006cff' : args.COLOR1),
+    color(args.COLOR2 === undefined ? '#ffffff' : args.COLOR2)];
+    const passes = [];
+    for (let i = 0; i < 8; i++) {
+      const arrowStart = delay * i + start;
+      passes.push(shaderPass('afterclipGroupShapeArrow', {
+        Opacity: 1, Scale: [1, 1], Rotation: 0, Radius: 5, Radius2: 6, Angle: 22.5, PatternRotation: 22.5 * i,
+        OutSize: easeOutFrom(time, arrowStart, length, 4, scale),
+        InSize: easeOutFrom(time, arrowStart + 0.2, length, 3, scale),
+        Position: [0, 0], Color: colors[i % 2]
+      }));
+    }
+    passes.push(shaderPass('afterclipGroupRepeatRadialRepeat', { Repeat: 2, Wide: 180, BlendOrder: 1 }, ['BlendOrder']));
+    passes.push(flipPass(true, false));
+    passes.push(fxaaPass());
+    return passes;
+  }
 
 };
 
