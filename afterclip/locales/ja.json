@@ -272,5 +272,26 @@
       "COLOR": "色",
       "MIX": "混合"
     }
+  },
+  "shape-pinwheel": {
+    "name": "風車",
+    "text": "風車 不透明度: [OPACITY] 拡大率 x: [SCALE_X] y: [SCALE_Y] 回転: [ROTATION] 位置 x: [POSITION_X] y: [POSITION_Y] 半径: [RADIUS] 色: [COLOR] 模様の回転: [PATTERNROTATION] 開く角度: [DIR] 間隔の角度: [WIDE] 繰り返し回数: [REPEAT] 波打ち: [WAVY] 周波数: [FREQUENCY] 混合: [MIX] %",
+    "labels": {
+      "OPACITY": "不透明度",
+      "SCALE_X": "拡大率x",
+      "SCALE_Y": "拡大率y",
+      "ROTATION": "回転",
+      "POSITION_X": "位置x",
+      "POSITION_Y": "位置y",
+      "RADIUS": "半径",
+      "COLOR": "色",
+      "PATTERNROTATION": "模様の回転",
+      "DIR": "開く角度",
+      "WIDE": "間隔の角度",
+      "REPEAT": "繰り返し回数",
+      "WAVY": "波打ち",
+      "FREQUENCY": "周波数",
+      "MIX": "混合"
+    }
   }
 }
