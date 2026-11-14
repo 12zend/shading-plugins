@@ -1,0 +1,19 @@
+{
+  "format": "shading.app/plugin",
+  "formatVersion": 1,
+  "id": "afterclip",
+  "name": "AfterClip",
+  "version": "1.0.0",
+  "description": "AfterClip shader effects and group presets, ported from Zoidium.",
+  "author": "shading.app (ported from Zoidium by rbstxt / 1zworks; original effects by AfterClip)",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/12zend/shading-plugins/tree/main/afterclip",
+  "main": "main.js",
+  "permissions": [],
+  "locales": {
+    "ja": {
+      "name": "AfterClip",
+      "description": "AfterClip のシェーダーエフェクトとグループプリセット（Zoidium から移植）。"
+    }
+  }
+}

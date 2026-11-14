@@ -1,0 +1,16 @@
+# Notice / 出典
+
+The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/zoidium/tree/71daddd/plugins/afterclip) `plugins/afterclip`
+(commit `71daddd`), with permission from its author rbstxt (1zworks).
+
+このプラグインのエフェクトは [Zoidium](https://github.com/rbstxt/zoidium/tree/71daddd/plugins/afterclip) の `plugins/afterclip`（commit `71daddd`）から、
+作者 rbstxt (1zworks) さんの許可を得て移植したものです。
+
+- Shader author / シェーダー作者: AfterClip
+- Zoidium normalization / Zoidium 版の正規化: rbstxt (1zworks)
+- Zoidium is MIT-licensed (Copyright (c) 2026 zoidnerd); the license text is in [ZOIDIUM-LICENSE.md](ZOIDIUM-LICENSE.md).
+  The plugin as a whole is distributed under GPL-3.0 like the rest of this repository.
+
+| Block id | Original effect | Original file | Original author |
+| --- | --- | --- | --- |
+| `repeat-circle-dot-wave` | Circle Dot Wave | `plugins/afterclip/shaders/afterclip-repeat-circle-dot-wave.glsl` (`Shaders/Repeat/Circle Dot Wave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
