@@ -2522,6 +2522,164 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "warp-fractal-warp",
+      "name": "Fractal Warp",
+      "text": "fractal warp amount: [AMOUNT] displacement x: [DISPLACEMENT_X] y: [DISPLACEMENT_Y] displacement offset x: [DISPLACEMENTOFFSET_X] y: [DISPLACEMENTOFFSET_Y] noise position x: [NOISEPOSITION_X] y: [NOISEPOSITION_Y] noise scale x: [NOISESCALE_X] y: [NOISESCALE_Y] step: [STEP] evolution: [EVOLUTION] complexity: [COMPLEXITY] strength: [STRENGTH] angle: [ANGLE] angle noise: [ANGLENOISE] start color: [STARTCOLOR] end color: [ENDCOLOR] repeat type: [REPEATTYPE] mix: [MIX] %",
+      "file": "shaders/warp-fractal-warp.glsl",
+      "inputs": [
+        {
+          "id": "AMOUNT",
+          "label": "amount",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Amount"
+        },
+        {
+          "id": "DISPLACEMENT_X",
+          "label": "displacement x",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Displacement",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "DISPLACEMENT_Y",
+          "label": "displacement y",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Displacement",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "DISPLACEMENTOFFSET_X",
+          "label": "displacement offset x",
+          "type": "number",
+          "defaultValue": 2.49,
+          "uniform": "u_DisplacementOffset",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "DISPLACEMENTOFFSET_Y",
+          "label": "displacement offset y",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_DisplacementOffset",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "NOISEPOSITION_X",
+          "label": "noise position x",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_NoisePosition",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "NOISEPOSITION_Y",
+          "label": "noise position y",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_NoisePosition",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "NOISESCALE_X",
+          "label": "noise scale x",
+          "type": "number",
+          "defaultValue": 5,
+          "uniform": "u_NoiseScale",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "NOISESCALE_Y",
+          "label": "noise scale y",
+          "type": "number",
+          "defaultValue": 5,
+          "uniform": "u_NoiseScale",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "STEP",
+          "label": "step",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Step"
+        },
+        {
+          "id": "EVOLUTION",
+          "label": "evolution",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Evolution"
+        },
+        {
+          "id": "COMPLEXITY",
+          "label": "complexity",
+          "type": "number",
+          "defaultValue": 8,
+          "uniform": "u_Complexity"
+        },
+        {
+          "id": "STRENGTH",
+          "label": "strength",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Strength"
+        },
+        {
+          "id": "ANGLE",
+          "label": "angle",
+          "type": "number",
+          "defaultValue": 2,
+          "uniform": "u_Angle"
+        },
+        {
+          "id": "ANGLENOISE",
+          "label": "angle noise",
+          "type": "number",
+          "defaultValue": 0.2,
+          "uniform": "u_AngleNoise"
+        },
+        {
+          "id": "STARTCOLOR",
+          "label": "start color",
+          "type": "color",
+          "defaultValue": "#ffffff",
+          "uniform": "u_StartColor"
+        },
+        {
+          "id": "ENDCOLOR",
+          "label": "end color",
+          "type": "color",
+          "defaultValue": "#ffffff",
+          "uniform": "u_EndColor"
+        },
+        {
+          "id": "REPEATTYPE",
+          "label": "repeat type",
+          "type": "integer",
+          "defaultValue": 0,
+          "uniform": "u_RepeatType"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }
