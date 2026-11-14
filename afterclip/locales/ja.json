@@ -576,5 +576,12 @@
     "labels": {
       "MIX": "混合"
     }
+  },
+  "group-effects-fw": {
+    "name": "花火",
+    "text": "花火 混合: [MIX] %",
+    "labels": {
+      "MIX": "混合"
+    }
   }
 }

@@ -176,7 +176,20 @@ const GROUPS = {
   brightnessContrastPass({ brightness: 0, contrast: 4 }),
   lumaKeyPass({ threshold: 0.521, soften: 0.1, invert: 0, mask: 0 }),
   colorGradingPass({ shadows: [1, 1, 1], midtones: [1, 1, 1], highlights: [1, 0.514, 0.514] }),
-  radialBlurPass({ density: 0, dither: 0.5, decay: 0.9, center: [0, 0], overbright: 1, weight: 0.095 })]
+  radialBlurPass({ density: 0, dither: 0.5, decay: 0.9, center: [0, 0], overbright: 1, weight: 0.095 })],
+
+  afterclipGroupEffectsFw: () => {
+    const line = (lineColor, patternRotation) => shaderPass('afterclipGroupGroupEffectsFwLine', {
+      Opacity: 1, Scale: [1, 1], Rotation: 0, Position: [0, 0], P1: [0, 0], P2: [0, 0], Width: 1.3,
+      Color: lineColor, Stroke: 0, PatternRotation: patternRotation
+    }, ['Stroke']);
+    return [
+    line([1, 0, 0.666666666666667], 0),
+    line([0, 0.6666666666666665, 1], 30),
+    line([1, 1, 1], 60),
+    shaderPass('afterclipGroupRepeatRadialRepeat', { Repeat: 4, Wide: 90, BlendOrder: 1 }, ['BlendOrder'])];
+
+  }
 
 };
 

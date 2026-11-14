@@ -2995,6 +2995,23 @@
           "defaultValue": 100
         }
       ]
+    },
+    {
+      "id": "group-effects-fw",
+      "name": "Fireworks",
+      "text": "fireworks mix: [MIX] %",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "afterclipGroupEffectsFw"
+      },
+      "inputs": [
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
     }
   ]
 }
