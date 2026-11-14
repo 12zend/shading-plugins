@@ -10,6 +10,8 @@ const GROUP_PROGRAMS = {
     afterclipGroupWarpPolarCoordinates: 'shaders/groups/afterclip-warp-polar-coordinates.glsl',
     afterclipGroupGroupDotWavesCircularDotwaveDotwaveWarp:
         'shaders/groups/afterclip-group-dot-waves-circular-dotwave-dotwave-warp.glsl',
+    afterclipGroupWarpMirrorFixedBugs: 'shaders/groups/afterclip-warp-mirror-fixed-bugs.glsl',
+    afterclipGroupRepeatHexDotWave: 'shaders/groups/afterclip-repeat-hex-dot-wave.glsl',
     afterclipBuiltinDuplicate: 'shaders/builtins/duplicate.glsl'
 };
 

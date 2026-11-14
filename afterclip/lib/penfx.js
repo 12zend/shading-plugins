@@ -39,7 +39,18 @@ const GROUPS = {
   shaderPass('afterclipGroupGroupDotWavesCircularDotwaveGrayscaleGradient', { Power: 2 }),
   duplicatePass({ offset: [-time, 0], multiplier: [5.23, 1], rotation: Math.PI / 2, repeat: 1 }),
   shaderPass('afterclipGroupWarpPolarCoordinates'),
-  shaderPass('afterclipGroupGroupDotWavesCircularDotwaveDotwaveWarp', DOTWAVE_WARP)]
+  shaderPass('afterclipGroupGroupDotWavesCircularDotwaveDotwaveWarp', DOTWAVE_WARP)],
+
+  // v = time * 0.4 (Panzoid expression of the hidden property v).
+  afterclipGroupDotWavesHexDotwave: (args, time) => [
+  shaderPass('afterclipGroupGroupDotWavesCircularDotwaveGrayscaleGradient', { Power: 2 }),
+  duplicatePass({ offset: [0, 0], multiplier: [3, 3], rotation: 0, repeat: 1 }),
+  duplicatePass({ offset: [-time * 0.4, 0], multiplier: [2, 1], rotation: 0, repeat: 1 }),
+  shaderPass('afterclipGroupWarpMirrorFixedBugs', { Segments: numberOr(args.N, 6) }),
+  shaderPass('afterclipGroupRepeatHexDotWave', {
+    Opacity: 1, Scale: [1, 1], Rotation: 0, Position: [0, 0], GridSize: 12, BoxScaleMin: 0, BoxScaleMax: 0.9,
+    Color: [1, 1, 1]
+  })]
 
 };
 

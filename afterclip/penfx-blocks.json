@@ -2825,6 +2825,29 @@
           "defaultValue": 100
         }
       ]
+    },
+    {
+      "id": "group-dot-waves-hex-dotwave",
+      "name": "Hex DotWave",
+      "text": "hex dotwave n: [N] mix: [MIX] %",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "afterclipGroupDotWavesHexDotwave"
+      },
+      "inputs": [
+        {
+          "id": "N",
+          "label": "n",
+          "type": "number",
+          "defaultValue": 6
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
     }
   ]
 }
