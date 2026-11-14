@@ -1046,6 +1046,118 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "shape-hex-net",
+      "name": "Hex Net",
+      "text": "hex net opacity: [OPACITY] scale x: [SCALE_X] y: [SCALE_Y] rotation: [ROTATION] position x: [POSITION_X] y: [POSITION_Y] grid size: [GRIDSIZE] hex scale: [HEXSCALE] color: [COLOR] offset x: [OFFSET_X] y: [OFFSET_Y] pattern rotation: [PATTERNROTATION] mix: [MIX] %",
+      "file": "shaders/shape-hex-net.glsl",
+      "inputs": [
+        {
+          "id": "OPACITY",
+          "label": "opacity",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Opacity"
+        },
+        {
+          "id": "SCALE_X",
+          "label": "scale x",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Scale",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "SCALE_Y",
+          "label": "scale y",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Scale",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "ROTATION",
+          "label": "rotation",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Rotation"
+        },
+        {
+          "id": "POSITION_X",
+          "label": "position x",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Position",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "POSITION_Y",
+          "label": "position y",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Position",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "GRIDSIZE",
+          "label": "grid size",
+          "type": "number",
+          "defaultValue": 5,
+          "uniform": "u_GridSize"
+        },
+        {
+          "id": "HEXSCALE",
+          "label": "hex scale",
+          "type": "number",
+          "defaultValue": 0.93,
+          "uniform": "u_HexScale"
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#ffffff",
+          "uniform": "u_Color"
+        },
+        {
+          "id": "OFFSET_X",
+          "label": "offset x",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Offset",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "OFFSET_Y",
+          "label": "offset y",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Offset",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "PATTERNROTATION",
+          "label": "pattern rotation",
+          "type": "number",
+          "defaultValue": 30,
+          "uniform": "u_PatternRotation"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }
