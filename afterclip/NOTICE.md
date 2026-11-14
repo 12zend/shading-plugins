@@ -38,3 +38,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `shape-repeating-dots` | Repeating Dots | `plugins/afterclip/shaders/afterclip-shape-repeating-dots.glsl` (`Shaders/Shape/Repeating Dots.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-roundedstar` | RoundedStar | `plugins/afterclip/shaders/afterclip-shape-roundedstar.glsl` (`Shaders/Shape/RoundedStar.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-shockwave` | Shockwave | `plugins/afterclip/shaders/afterclip-shape-shockwave.glsl` (`Shaders/Shape/Shockwave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `shape-triangle` | Triangle | `plugins/afterclip/shaders/afterclip-shape-triangle.glsl` (`Shaders/Shape/Triangle.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
