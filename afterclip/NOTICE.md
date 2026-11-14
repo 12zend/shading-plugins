@@ -50,3 +50,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `group-dot-waves-square-dotwave` | Square DotWave (group preset) | `plugins/afterclip/groups/afterclip-group-dot-waves-square-dotwave.json` (`Presets/Dot Waves/Square DotWave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `group-effects-arrow` | Arrow Effect (group preset) | `plugins/afterclip/groups/afterclip-group-effects-arrow.json` (`Presets/Effects/Arrow.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `group-effects-burst` | Burst (group preset) | `plugins/afterclip/groups/afterclip-group-effects-burst.json` (`Presets/Effects/Burst.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `group-effects-fractal-burst` | Fractal Burst (group preset) | `plugins/afterclip/groups/afterclip-group-effects-fractal-burst.json` (`Presets/Effects/Fractal Burst.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

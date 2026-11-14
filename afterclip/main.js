@@ -16,9 +16,15 @@ const GROUP_PROGRAMS = {
     afterclipGroupRepeatRadialRepeat: 'shaders/groups/afterclip-repeat-radial-repeat.glsl',
     afterclipGroupShapeTriangle: 'shaders/groups/afterclip-shape-triangle.glsl',
     afterclipGroupGroupEffectsBurstTriangleMask: 'shaders/groups/afterclip-group-effects-burst-triangle-mask.glsl',
+    afterclipGroupWarpFractalNoise: 'shaders/groups/afterclip-warp-fractal-noise.glsl',
     afterclipBuiltinDuplicate: 'shaders/builtins/duplicate.glsl',
     afterclipBuiltinFlip: 'shaders/builtins/flip.glsl',
-    afterclipBuiltinFxaa: 'shaders/builtins/fxaa.glsl'
+    afterclipBuiltinFxaa: 'shaders/builtins/fxaa.glsl',
+    afterclipBuiltinMask: 'shaders/builtins/mask.glsl',
+    afterclipBuiltinBrightnessContrast: 'shaders/builtins/brightness-contrast.glsl',
+    afterclipBuiltinLumaKey: 'shaders/builtins/luma-key.glsl',
+    afterclipBuiltinColorGrading: 'shaders/builtins/color-grading.glsl',
+    afterclipBuiltinRadialBlur: 'shaders/builtins/radial-blur.glsl'
 };
 
 exports.activate = shading => {

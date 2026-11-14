@@ -569,5 +569,12 @@
       "LENGTH": "長さ",
       "MIX": "混合"
     }
+  },
+  "group-effects-fractal-burst": {
+    "name": "フラクタルバースト",
+    "text": "フラクタルバースト 混合: [MIX] %",
+    "labels": {
+      "MIX": "混合"
+    }
   }
 }

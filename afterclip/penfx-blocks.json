@@ -2978,6 +2978,23 @@
           "defaultValue": 100
         }
       ]
+    },
+    {
+      "id": "group-effects-fractal-burst",
+      "name": "Fractal Burst",
+      "text": "fractal burst mix: [MIX] %",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "afterclipGroupEffectsFractalBurst"
+      },
+      "inputs": [
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
     }
   ]
 }

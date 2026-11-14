@@ -38,6 +38,47 @@ const flipPass = (horizontal, vertical) => ({
 // Panzoid built-in "Antialiasing" (FXAA).
 const fxaaPass = () => ({ program: 'afterclipBuiltinFxaa', uniforms: {}, integerUniforms: [] });
 
+// Panzoid built-in shape "Mask" (mode 0 rectangle, 1 ellipse; position/size in 1080p project pixels).
+const maskPass = ({ mode = 1, position = [0, 0], size = [100, 100], rotation = 0, invert = 0, feather = 0, opacity = 1 }) => ({
+  program: 'afterclipBuiltinMask',
+  uniforms: {
+    u_mode: mode, u_position: position, u_size: size, u_rotation: rotation, u_invert: invert ? 1 : 0,
+    u_feather: feather, u_opacity: opacity
+  },
+  integerUniforms: ['u_mode', 'u_invert']
+});
+
+// Panzoid built-in "Brightness + Contrast".
+const brightnessContrastPass = ({ brightness = 0, contrast = 1 }) => ({
+  program: 'afterclipBuiltinBrightnessContrast',
+  uniforms: { u_brightness: brightness, u_contrast: contrast },
+  integerUniforms: []
+});
+
+// Panzoid built-in "Luma Key".
+const lumaKeyPass = ({ threshold = 0.5, soften = 0, invert = 0, mask = 0 }) => ({
+  program: 'afterclipBuiltinLumaKey',
+  uniforms: { u_threshold: threshold, u_soften: soften, u_invert: invert ? 1 : 0, u_mask: mask ? 1 : 0 },
+  integerUniforms: ['u_invert', 'u_mask']
+});
+
+// Panzoid built-in "Color Grading".
+const colorGradingPass = ({ shadows = [1, 1, 1], midtones = [1, 1, 1], highlights = [1, 1, 1] }) => ({
+  program: 'afterclipBuiltinColorGrading',
+  uniforms: { u_shadows: shadows, u_midtones: midtones, u_highlights: highlights },
+  integerUniforms: []
+});
+
+// Panzoid built-in "Radial Blur".
+const radialBlurPass = ({ density = 0, dither = 0, decay = 1, center = [0, 0], overbright = 1, weight = 1 }) => ({
+  program: 'afterclipBuiltinRadialBlur',
+  uniforms: {
+    u_density: density, u_dither: dither, u_decay: decay, u_center: center, u_overbright: overbright ? 1 : 0,
+    u_weight: weight
+  },
+  integerUniforms: ['u_overbright']
+});
+
 // Panzoid expression `(1-pow(1-t,power)*(t<1))*(0<t)*scale` with t = (time - start) / length: an ease-out
 // from 0 to scale that starts at `start`.
 const easeOutFrom = (time, start, length, power, scale) => {
@@ -122,7 +163,20 @@ const GROUPS = {
     }, triangle)),
     shaderPass('afterclipGroupRepeatRadialRepeat', { Repeat: 18, Wide: 20, BlendOrder: 1 }, ['BlendOrder'])];
 
-  }
+  },
+
+  afterclipGroupEffectsFractalBurst: () => [
+  shaderPass('afterclipGroupWarpFractalNoise', {
+    NoisePosition: [0, 0], NoiseScale: [15.56, 0.36], Step: 0, Complexity: 9.96, Strength: 0, Angle: 14.02,
+    AngleNoise: 0.5, StartColor: [1, 1, 1], EndColor: [0, 0, 0]
+  }, ['Step']),
+  shaderPass('afterclipGroupWarpPolarCoordinates'),
+  maskPass({ mode: 1, position: [0, 0], size: [540, 540], rotation: 0, invert: 0, feather: 0.83, opacity: 1 }),
+  maskPass({ mode: 1, position: [0, 0], size: [200, 200], rotation: 0, invert: 1, feather: 1, opacity: 1 }),
+  brightnessContrastPass({ brightness: 0, contrast: 4 }),
+  lumaKeyPass({ threshold: 0.521, soften: 0.1, invert: 0, mask: 0 }),
+  colorGradingPass({ shadows: [1, 1, 1], midtones: [1, 1, 1], highlights: [1, 0.514, 0.514] }),
+  radialBlurPass({ density: 0, dither: 0.5, decay: 0.9, center: [0, 0], overbright: 1, weight: 0.095 })]
 
 };
 
