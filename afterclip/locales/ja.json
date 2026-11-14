@@ -157,5 +157,30 @@
       "COLOR": "色",
       "MIX": "混合"
     }
+  },
+  "shape-cle": {
+    "name": "CLE",
+    "text": "CLE 不透明度: [OPACITY] 拡大率 x: [SCALE_X] y: [SCALE_Y] 回転: [ROTATION] 位置 x: [POSITION_X] y: [POSITION_Y] 点1 x: [P1_X] y: [P1_Y] 点2 x: [P2_X] y: [P2_Y] 幅: [WIDTH] 色: [COLOR] 線の種類: [STROKE] 模様の回転: [PATTERNROTATION] 開始角度: [INDIR] 終了角度: [OUTDIR] 繰り返し回数: [REPEAT] 間隔の角度: [WIDE] 混合: [MIX] %",
+    "labels": {
+      "OPACITY": "不透明度",
+      "SCALE_X": "拡大率x",
+      "SCALE_Y": "拡大率y",
+      "ROTATION": "回転",
+      "POSITION_X": "位置x",
+      "POSITION_Y": "位置y",
+      "P1_X": "点1x",
+      "P1_Y": "点1y",
+      "P2_X": "点2x",
+      "P2_Y": "点2y",
+      "WIDTH": "幅",
+      "COLOR": "色",
+      "STROKE": "線の種類",
+      "PATTERNROTATION": "模様の回転",
+      "INDIR": "開始角度",
+      "OUTDIR": "終了角度",
+      "REPEAT": "繰り返し回数",
+      "WIDE": "間隔の角度",
+      "MIX": "混合"
+    }
   }
 }
