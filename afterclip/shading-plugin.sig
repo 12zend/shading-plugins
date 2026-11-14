@@ -3,5 +3,5 @@
   "version": 1,
   "keyId": "official-2026",
   "algorithm": "ECDSA-P256-SHA256",
-  "signature": "kFN061J60jzIHp49mLbPsBSSoQJEspDtpWyzCUzeJBG+euMP5pdQipqxcURP+wlDLYSEMOLBdGg/4cjr1pi63Q=="
+  "signature": "PzSKxv9IliG95rQAyeE5QvI5KzIZlCvhRcYg5i+eaC84Bvr7VrlAJ8d7ipZb8RxX2M0OFquYMLFwBDPHpkIklg=="
 }
