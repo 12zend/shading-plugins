@@ -1591,6 +1591,50 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "shape-plain-wave-mask",
+      "name": "Plain Wave Mask",
+      "text": "plain wave mask time: [TIME] delay: [DELAY] power: [POWER] step: [STEP] mix: [MIX] %",
+      "file": "shaders/shape-plain-wave-mask.glsl",
+      "inputs": [
+        {
+          "id": "TIME",
+          "label": "time",
+          "type": "number",
+          "defaultValue": 0.5,
+          "uniform": "u_Time"
+        },
+        {
+          "id": "DELAY",
+          "label": "delay",
+          "type": "number",
+          "defaultValue": 0.7,
+          "uniform": "u_Delay"
+        },
+        {
+          "id": "POWER",
+          "label": "power",
+          "type": "number",
+          "defaultValue": 3,
+          "uniform": "u_Power"
+        },
+        {
+          "id": "STEP",
+          "label": "step",
+          "type": "number",
+          "defaultValue": 8,
+          "uniform": "u_Step"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }

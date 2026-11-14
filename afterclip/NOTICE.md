@@ -31,3 +31,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `shape-lines` | Lines | `plugins/afterclip/shaders/afterclip-shape-lines.glsl` (`Shaders/Shape/Lines.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-net` | Net | `plugins/afterclip/shaders/afterclip-shape-net.glsl` (`Shaders/Shape/Net.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-pinwheel` | PinWheel | `plugins/afterclip/shaders/afterclip-shape-pinwheel.glsl` (`Shaders/Shape/PinWheel.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `shape-plain-wave-mask` | Plain Wave Mask | `plugins/afterclip/shaders/afterclip-shape-plain-wave-mask.glsl` (`Shaders/Shape/Plain Wave Mask.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

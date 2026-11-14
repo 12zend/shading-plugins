@@ -293,5 +293,16 @@
       "FREQUENCY": "周波数",
       "MIX": "混合"
     }
+  },
+  "shape-plain-wave-mask": {
+    "name": "プレーンウェーブマスク",
+    "text": "プレーンウェーブマスク 時間: [TIME] 遅れ: [DELAY] 強さ: [POWER] 段数: [STEP] 混合: [MIX] %",
+    "labels": {
+      "TIME": "時間",
+      "DELAY": "遅れ",
+      "POWER": "強さ",
+      "STEP": "段数",
+      "MIX": "混合"
+    }
   }
 }
