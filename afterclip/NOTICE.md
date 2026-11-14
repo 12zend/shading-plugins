@@ -36,3 +36,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `shape-polygon-echo` | Polygon Echo | `plugins/afterclip/shaders/afterclip-shape-polygon-echo.glsl` (`Shaders/Shape/Polygon Echo.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-polygon` | Polygon | `plugins/afterclip/shaders/afterclip-shape-polygon.glsl` (`Shaders/Shape/Polygon.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-repeating-dots` | Repeating Dots | `plugins/afterclip/shaders/afterclip-shape-repeating-dots.glsl` (`Shaders/Shape/Repeating Dots.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `shape-roundedstar` | RoundedStar | `plugins/afterclip/shaders/afterclip-shape-roundedstar.glsl` (`Shaders/Shape/RoundedStar.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

@@ -381,5 +381,24 @@
       "XREPEAT": "x方向の繰り返し回数",
       "MIX": "混合"
     }
+  },
+  "shape-roundedstar": {
+    "name": "角丸の星",
+    "text": "角丸の星 拡大率 x: [SCALE_X] y: [SCALE_Y] 回転: [ROTATION] 色: [COLOR] 不透明度: [OPACITY] 大きさ: [SIZE] 位置 x: [POSITION_X] y: [POSITION_Y] 楕円の拡大率 x: [ELLIPSESCALE_X] y: [ELLIPSESCALE_Y] 模様の回転: [PATTERNROTATION] 角の数: [N] 混合: [MIX] %",
+    "labels": {
+      "SCALE_X": "拡大率x",
+      "SCALE_Y": "拡大率y",
+      "ROTATION": "回転",
+      "COLOR": "色",
+      "OPACITY": "不透明度",
+      "SIZE": "大きさ",
+      "POSITION_X": "位置x",
+      "POSITION_Y": "位置y",
+      "ELLIPSESCALE_X": "楕円の拡大率x",
+      "ELLIPSESCALE_Y": "楕円の拡大率y",
+      "PATTERNROTATION": "模様の回転",
+      "N": "角の数",
+      "MIX": "混合"
+    }
   }
 }
