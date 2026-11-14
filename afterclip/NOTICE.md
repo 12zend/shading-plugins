@@ -29,3 +29,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `shape-line-wave-mask` | Line Wave Mask | `plugins/afterclip/shaders/afterclip-shape-line-wave-mask.glsl` (`Shaders/Shape/Line Wave Mask.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-line-wave` | Line Wave | `plugins/afterclip/shaders/afterclip-shape-line-wave.glsl` (`Shaders/Shape/Line Wave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-lines` | Lines | `plugins/afterclip/shaders/afterclip-shape-lines.glsl` (`Shaders/Shape/Lines.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `shape-net` | Net | `plugins/afterclip/shaders/afterclip-shape-net.glsl` (`Shaders/Shape/Net.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
