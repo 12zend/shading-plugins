@@ -498,5 +498,14 @@
     "labels": {
       "MIX": "混合"
     }
+  },
+  "warp-stretch": {
+    "name": "引き伸ばし",
+    "text": "引き伸ばし 角度: [ANGLE] 伸ばす量: [STRETCH] 混合: [MIX] %",
+    "labels": {
+      "ANGLE": "角度",
+      "STRETCH": "伸ばす量",
+      "MIX": "混合"
+    }
   }
 }

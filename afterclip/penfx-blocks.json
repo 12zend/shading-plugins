@@ -2719,6 +2719,36 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "warp-stretch",
+      "name": "Stretch",
+      "text": "stretch angle: [ANGLE] stretch: [STRETCH] mix: [MIX] %",
+      "file": "shaders/warp-stretch.glsl",
+      "inputs": [
+        {
+          "id": "ANGLE",
+          "label": "angle",
+          "type": "number",
+          "defaultValue": 45,
+          "uniform": "u_Angle"
+        },
+        {
+          "id": "STRETCH",
+          "label": "stretch",
+          "type": "number",
+          "defaultValue": 1.53,
+          "uniform": "u_Stretch"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }
