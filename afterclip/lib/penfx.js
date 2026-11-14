@@ -21,6 +21,37 @@ const shaderPass = (program, properties = {}, integers = []) => {
   return { program, uniforms, integerUniforms: integers.map(name => `u_${name}`) };
 };
 
+// Panzoid keyframes are frames of the preset's project; Zoidium (like Panzoid) defaults to 30 frames per second.
+const PRESET_FRAME_RATE = 30;
+
+// Panzoid tweens: the right keyframe's tween eases the segment before it (0 hold, 1 linear, 2-4 quadratic
+// in/out/in-out, 5-7 cubic in/out/in-out).
+const EASINGS = [
+null,
+u => u,
+u => u * u,
+u => u * (2 - u),
+u => u < 0.5 ? 2 * u * u : -1 + (4 - 2 * u) * u,
+u => u * u * u,
+u => 1 - Math.pow(1 - u, 3),
+u => u < 0.5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2];
+
+
+// Value of a keyframed property at `time` seconds. keyframes: [[frame, value, tween], ...] in frame order.
+const keyframed = (time, keyframes) => {
+  const frame = time * PRESET_FRAME_RATE;
+  if (!(frame > keyframes[0][0])) return keyframes[0][1];
+  for (let i = 1; i < keyframes.length; i++) {
+    const [endFrame, endValue, tween] = keyframes[i];
+    if (frame >= endFrame) continue;
+    const [startFrame, startValue] = keyframes[i - 1];
+    const ease = EASINGS[tween] === undefined ? EASINGS[1] : EASINGS[tween];
+    if (!ease) return startValue;
+    return startValue + (endValue - startValue) * ease((frame - startFrame) / (endFrame - startFrame));
+  }
+  return keyframes[keyframes.length - 1][1];
+};
+
 // Panzoid built-in "Duplicate". rotation is in radians, like Panzoid's own setting.
 const duplicatePass = ({ offset = [0, 0], multiplier = [1, 1], rotation = 0, repeat = 1 }) => ({
   program: 'afterclipBuiltinDuplicate',
@@ -178,9 +209,14 @@ const GROUPS = {
   colorGradingPass({ shadows: [1, 1, 1], midtones: [1, 1, 1], highlights: [1, 0.514, 0.514] }),
   radialBlurPass({ density: 0, dither: 0.5, decay: 0.9, center: [0, 0], overbright: 1, weight: 0.095 })],
 
-  afterclipGroupEffectsFw: () => {
+  // Every line is keyframed the same way: its head rises to y 500 (frames 0-57, cubic out), its tail follows to
+  // y 250 (frames 10-57, quadratic out) and it thins out (frames 29-57, quadratic in).
+  afterclipGroupEffectsFw: (args, time) => {
+    const head = [0, keyframed(time, [[0, 0, 1], [57, 500, 6]])];
+    const tail = [0, keyframed(time, [[10, 0, 1], [57, 250, 3]])];
+    const width = keyframed(time, [[29, 1.3, 1], [57, 0, 2]]);
     const line = (lineColor, patternRotation) => shaderPass('afterclipGroupGroupEffectsFwLine', {
-      Opacity: 1, Scale: [1, 1], Rotation: 0, Position: [0, 0], P1: [0, 0], P2: [0, 0], Width: 1.3,
+      Opacity: 1, Scale: [1, 1], Rotation: 0, Position: [0, 0], P1: tail, P2: head, Width: width,
       Color: lineColor, Stroke: 0, PatternRotation: patternRotation
     }, ['Stroke']);
     return [
