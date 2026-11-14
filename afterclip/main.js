@@ -20,6 +20,8 @@ const GROUP_PROGRAMS = {
     afterclipGroupGroupEffectsFwLine: 'shaders/groups/afterclip-group-effects-fw-line.glsl',
     afterclipGroupShapeLineWave: 'shaders/groups/afterclip-shape-line-wave.glsl',
     afterclipGroupShapeLineWaveMask: 'shaders/groups/afterclip-shape-line-wave-mask.glsl',
+    afterclipGroupShapePlainWave: 'shaders/groups/afterclip-shape-plain-wave.glsl',
+    afterclipGroupShapePlainWaveMask: 'shaders/groups/afterclip-shape-plain-wave-mask.glsl',
     afterclipBuiltinDuplicate: 'shaders/builtins/duplicate.glsl',
     afterclipBuiltinFlip: 'shaders/builtins/flip.glsl',
     afterclipBuiltinFxaa: 'shaders/builtins/fxaa.glsl',

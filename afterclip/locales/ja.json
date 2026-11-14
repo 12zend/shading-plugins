@@ -590,5 +590,12 @@
     "labels": {
       "MIX": "混合"
     }
+  },
+  "group-effects-spiral": {
+    "name": "渦巻き",
+    "text": "渦巻き 混合: [MIX] %",
+    "labels": {
+      "MIX": "混合"
+    }
   }
 }

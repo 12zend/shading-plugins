@@ -3029,6 +3029,23 @@
           "defaultValue": 100
         }
       ]
+    },
+    {
+      "id": "group-effects-spiral",
+      "name": "Spiral",
+      "text": "spiral mix: [MIX] %",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "afterclipGroupEffectsSpiral"
+      },
+      "inputs": [
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
     }
   ]
 }

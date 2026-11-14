@@ -241,7 +241,21 @@ const GROUPS = {
     shaderPass('afterclipGroupShapeLineWaveMask', { Time: waveTime(4), Delay: 0.3, Power: 3, Step: 11 }),
     duplicatePass({ offset: [-0.5, 0], multiplier: [2, 1], rotation: 0, repeat: 1 })];
 
-  }
+  },
+
+  // Wave (Time 0 to 1 over frames 0-154) and WaveCut (frames 25-179), duplicated, bent into a circle by Polar
+  // Coordinates and flipped.
+  afterclipGroupEffectsSpiral: (args, time) => [
+  shaderPass('afterclipGroupShapePlainWave', {
+    Time: keyframed(time, [[0, 0, 1], [154, 1, 1]]), Delay: 0.7, Power: 3, Step: 8, StartColor: [1, 1, 1],
+    EndColor: [1, 0, 0], ColorStep: 1
+  }),
+  shaderPass('afterclipGroupShapePlainWaveMask', {
+    Time: keyframed(time, [[25, 0, 1], [179, 1, 1]]), Delay: 0.7, Power: 3, Step: 8
+  }),
+  duplicatePass({ offset: [0, 0], multiplier: [2, 1], rotation: 0, repeat: 0 }),
+  shaderPass('afterclipGroupWarpPolarCoordinates'),
+  flipPass(true, false)]
 
 };
 

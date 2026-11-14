@@ -53,3 +53,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `group-effects-fractal-burst` | Fractal Burst (group preset) | `plugins/afterclip/groups/afterclip-group-effects-fractal-burst.json` (`Presets/Effects/Fractal Burst.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `group-effects-fw` | Fireworks (group preset) | `plugins/afterclip/groups/afterclip-group-effects-fw.json` (`Presets/Effects/fw.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `group-effects-line-waves` | Line Waves (group preset) | `plugins/afterclip/groups/afterclip-group-effects-line-waves.json` (`Presets/Effects/Line Waves.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `group-effects-spiral` | Spiral (group preset) | `plugins/afterclip/groups/afterclip-group-effects-spiral.json` (`Presets/Effects/Spiral.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
