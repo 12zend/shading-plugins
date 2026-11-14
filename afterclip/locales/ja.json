@@ -182,5 +182,15 @@
       "WIDE": "間隔の角度",
       "MIX": "混合"
     }
+  },
+  "shape-gradient-overlay-easeable": {
+    "name": "グラデーション（イージング）",
+    "text": "グラデーション（イージング） 強さ: [POWER] 開始色: [STARTCOLOR] 終了色: [ENDCOLOR] 混合: [MIX] %",
+    "labels": {
+      "POWER": "強さ",
+      "STARTCOLOR": "開始色",
+      "ENDCOLOR": "終了色",
+      "MIX": "混合"
+    }
   }
 }

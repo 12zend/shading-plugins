@@ -1009,6 +1009,43 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "shape-gradient-overlay-easeable",
+      "name": "Gradient (Easeable)",
+      "text": "gradient (easeable) power: [POWER] start color: [STARTCOLOR] end color: [ENDCOLOR] mix: [MIX] %",
+      "file": "shaders/shape-gradient-overlay-easeable.glsl",
+      "inputs": [
+        {
+          "id": "POWER",
+          "label": "power",
+          "type": "number",
+          "defaultValue": 2.5,
+          "uniform": "u_Power"
+        },
+        {
+          "id": "STARTCOLOR",
+          "label": "start color",
+          "type": "color",
+          "defaultValue": "#ffffff",
+          "uniform": "u_StartColor"
+        },
+        {
+          "id": "ENDCOLOR",
+          "label": "end color",
+          "type": "color",
+          "defaultValue": "#000000",
+          "uniform": "u_EndColor"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }

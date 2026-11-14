@@ -24,3 +24,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `shape-arrow` | Arrow Shape | `plugins/afterclip/shaders/afterclip-shape-arrow.glsl` (`Shaders/Shape/Arrow.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-chevron` | Chevron | `plugins/afterclip/shaders/afterclip-shape-chevron.glsl` (`Shaders/Shape/Chevron.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-cle` | CLE | `plugins/afterclip/shaders/afterclip-shape-cle.glsl` (`Shaders/Shape/CLE.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `shape-gradient-overlay-easeable` | Gradient (Easeable) | `plugins/afterclip/shaders/afterclip-shape-gradient-overlay-easeable.glsl` (`Shaders/Shape/Gradient Overlay (Easeable).txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
