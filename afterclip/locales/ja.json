@@ -222,5 +222,19 @@
       "STEP": "段数",
       "MIX": "混合"
     }
+  },
+  "shape-line-wave": {
+    "name": "ラインウェーブ",
+    "text": "ラインウェーブ 時間: [TIME] 遅れ: [DELAY] 強さ: [POWER] 段数: [STEP] 開始色: [STARTCOLOR] 終了色: [ENDCOLOR] 色の段数: [COLORSTEP] 混合: [MIX] %",
+    "labels": {
+      "TIME": "時間",
+      "DELAY": "遅れ",
+      "POWER": "強さ",
+      "STEP": "段数",
+      "STARTCOLOR": "開始色",
+      "ENDCOLOR": "終了色",
+      "COLORSTEP": "色の段数",
+      "MIX": "混合"
+    }
   }
 }

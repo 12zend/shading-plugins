@@ -27,3 +27,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `shape-gradient-overlay-easeable` | Gradient (Easeable) | `plugins/afterclip/shaders/afterclip-shape-gradient-overlay-easeable.glsl` (`Shaders/Shape/Gradient Overlay (Easeable).txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-hex-net` | Hex Net | `plugins/afterclip/shaders/afterclip-shape-hex-net.glsl` (`Shaders/Shape/Hex Net.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-line-wave-mask` | Line Wave Mask | `plugins/afterclip/shaders/afterclip-shape-line-wave-mask.glsl` (`Shaders/Shape/Line Wave Mask.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `shape-line-wave` | Line Wave | `plugins/afterclip/shaders/afterclip-shape-line-wave.glsl` (`Shaders/Shape/Line Wave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

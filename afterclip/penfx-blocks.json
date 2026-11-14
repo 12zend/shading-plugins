@@ -1202,6 +1202,71 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "shape-line-wave",
+      "name": "Line Wave",
+      "text": "line wave time: [TIME] delay: [DELAY] power: [POWER] step: [STEP] start color: [STARTCOLOR] end color: [ENDCOLOR] color step: [COLORSTEP] mix: [MIX] %",
+      "file": "shaders/shape-line-wave.glsl",
+      "inputs": [
+        {
+          "id": "TIME",
+          "label": "time",
+          "type": "number",
+          "defaultValue": 0.5,
+          "uniform": "u_Time"
+        },
+        {
+          "id": "DELAY",
+          "label": "delay",
+          "type": "number",
+          "defaultValue": 0.3,
+          "uniform": "u_Delay"
+        },
+        {
+          "id": "POWER",
+          "label": "power",
+          "type": "number",
+          "defaultValue": 3,
+          "uniform": "u_Power"
+        },
+        {
+          "id": "STEP",
+          "label": "step",
+          "type": "number",
+          "defaultValue": 11,
+          "uniform": "u_Step"
+        },
+        {
+          "id": "STARTCOLOR",
+          "label": "start color",
+          "type": "color",
+          "defaultValue": "#ff0000",
+          "uniform": "u_StartColor"
+        },
+        {
+          "id": "ENDCOLOR",
+          "label": "end color",
+          "type": "color",
+          "defaultValue": "#ff0000",
+          "uniform": "u_EndColor"
+        },
+        {
+          "id": "COLORSTEP",
+          "label": "color step",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_ColorStep"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }
