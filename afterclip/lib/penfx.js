@@ -102,6 +102,26 @@ const GROUPS = {
     passes.push(flipPass(true, false));
     passes.push(fxaaPass());
     return passes;
+  },
+
+  // Width, Angle and Margin are outer properties of the Zoidium group that no node references; the block
+  // keeps them as inputs (like Zoidium) but they do not change the image.
+  afterclipGroupEffectsBurst: (args, time) => {
+    const start = numberOr(args.START, 0);
+    const scale = numberOr(args.SCALE, 1);
+    const length = numberOr(args.LENGTH, 1);
+    const triangle = { P1: [0, 0], P2: [300, 0], P3: [500, -183.48] };
+    return [
+    shaderPass('afterclipGroupShapeTriangle', Object.assign({
+      Opacity: 1, Scale: [1, 1], Rotation: 0, Position: [0, 0],
+      Color: color(args.COLOR === undefined ? '#ffffff' : args.COLOR),
+      GeometryScale: easeOutFrom(time, start, length, 5, scale)
+    }, triangle)),
+    shaderPass('afterclipGroupGroupEffectsBurstTriangleMask', Object.assign({
+      GeometryScale: easeOutFrom(time, start + 0.2, length, 3, scale)
+    }, triangle)),
+    shaderPass('afterclipGroupRepeatRadialRepeat', { Repeat: 18, Wide: 20, BlendOrder: 1 }, ['BlendOrder'])];
+
   }
 
 };

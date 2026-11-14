@@ -555,5 +555,19 @@
       "LENGTH": "長さ",
       "MIX": "混合"
     }
+  },
+  "group-effects-burst": {
+    "name": "バースト",
+    "text": "バースト 開始: [START] 色: [COLOR] 幅: [WIDTH] 角度: [ANGLE] 余白: [MARGIN] 拡大率: [SCALE] 長さ: [LENGTH] 混合: [MIX] %",
+    "labels": {
+      "START": "開始",
+      "COLOR": "色",
+      "WIDTH": "幅",
+      "ANGLE": "角度",
+      "MARGIN": "余白",
+      "SCALE": "拡大率",
+      "LENGTH": "長さ",
+      "MIX": "混合"
+    }
   }
 }

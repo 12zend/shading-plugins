@@ -14,6 +14,8 @@ const GROUP_PROGRAMS = {
     afterclipGroupRepeatHexDotWave: 'shaders/groups/afterclip-repeat-hex-dot-wave.glsl',
     afterclipGroupShapeArrow: 'shaders/groups/afterclip-shape-arrow.glsl',
     afterclipGroupRepeatRadialRepeat: 'shaders/groups/afterclip-repeat-radial-repeat.glsl',
+    afterclipGroupShapeTriangle: 'shaders/groups/afterclip-shape-triangle.glsl',
+    afterclipGroupGroupEffectsBurstTriangleMask: 'shaders/groups/afterclip-group-effects-burst-triangle-mask.glsl',
     afterclipBuiltinDuplicate: 'shaders/builtins/duplicate.glsl',
     afterclipBuiltinFlip: 'shaders/builtins/flip.glsl',
     afterclipBuiltinFxaa: 'shaders/builtins/fxaa.glsl'

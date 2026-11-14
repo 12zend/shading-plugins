@@ -2919,6 +2919,65 @@
           "defaultValue": 100
         }
       ]
+    },
+    {
+      "id": "group-effects-burst",
+      "name": "Burst",
+      "text": "burst start: [START] color: [COLOR] width: [WIDTH] angle: [ANGLE] margin: [MARGIN] scale: [SCALE] length: [LENGTH] mix: [MIX] %",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "afterclipGroupEffectsBurst"
+      },
+      "inputs": [
+        {
+          "id": "START",
+          "label": "start",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "WIDTH",
+          "label": "width",
+          "type": "number",
+          "defaultValue": 0.03
+        },
+        {
+          "id": "ANGLE",
+          "label": "angle",
+          "type": "number",
+          "defaultValue": 0
+        },
+        {
+          "id": "MARGIN",
+          "label": "margin",
+          "type": "number",
+          "defaultValue": 0.5
+        },
+        {
+          "id": "SCALE",
+          "label": "scale",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "LENGTH",
+          "label": "length",
+          "type": "number",
+          "defaultValue": 1
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
     }
   ]
 }
