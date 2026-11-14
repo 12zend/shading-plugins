@@ -21,3 +21,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `repeat-linear-repeat` | Linear Repeat | `plugins/afterclip/shaders/afterclip-repeat-linear-repeat.glsl` (`Shaders/Repeat/Linear Repeat.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `repeat-radial-repeat` | Radial Repeat | `plugins/afterclip/shaders/afterclip-repeat-radial-repeat.glsl` (`Shaders/Repeat/Radial Repeat.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `repeat-stroke-extended` | Stroke (Extended) | `plugins/afterclip/shaders/afterclip-repeat-stroke-extended.glsl` (`Shaders/Repeat/Stroke (Extended).txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `shape-arrow` | Arrow Shape | `plugins/afterclip/shaders/afterclip-shape-arrow.glsl` (`Shaders/Shape/Arrow.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
