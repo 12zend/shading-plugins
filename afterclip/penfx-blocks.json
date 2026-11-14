@@ -2848,6 +2848,23 @@
           "defaultValue": 100
         }
       ]
+    },
+    {
+      "id": "group-dot-waves-square-dotwave",
+      "name": "Square DotWave",
+      "text": "square dotwave mix: [MIX] %",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "afterclipGroupDotWavesSquareDotwave"
+      },
+      "inputs": [
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
     }
   ]
 }

@@ -47,3 +47,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `warp-wavy-extended` | Wavy (Extended) | `plugins/afterclip/shaders/afterclip-warp-wavy-extended.glsl` (`Shaders/Warp/Wavy (Extended).txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `group-dot-waves-circular-dotwave` | Circular DotWave (group preset) | `plugins/afterclip/groups/afterclip-group-dot-waves-circular-dotwave.json` (`Presets/Dot Waves/Circular DotWave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `group-dot-waves-hex-dotwave` | Hex DotWave (group preset) | `plugins/afterclip/groups/afterclip-group-dot-waves-hex-dotwave.json` (`Presets/Dot Waves/Hex DotWave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `group-dot-waves-square-dotwave` | Square DotWave (group preset) | `plugins/afterclip/groups/afterclip-group-dot-waves-square-dotwave.json` (`Presets/Dot Waves/Square DotWave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

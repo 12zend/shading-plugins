@@ -535,5 +535,12 @@
       "N": "分割数",
       "MIX": "混合"
     }
+  },
+  "group-dot-waves-square-dotwave": {
+    "name": "四角ドットウェーブ",
+    "text": "四角ドットウェーブ 混合: [MIX] %",
+    "labels": {
+      "MIX": "混合"
+    }
   }
 }

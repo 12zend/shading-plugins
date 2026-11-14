@@ -50,7 +50,14 @@ const GROUPS = {
   shaderPass('afterclipGroupRepeatHexDotWave', {
     Opacity: 1, Scale: [1, 1], Rotation: 0, Position: [0, 0], GridSize: 12, BoxScaleMin: 0, BoxScaleMax: 0.9,
     Color: [1, 1, 1]
-  })]
+  })],
+
+  afterclipGroupDotWavesSquareDotwave: (args, time) => [
+  shaderPass('afterclipGroupGroupDotWavesCircularDotwaveGrayscaleGradient', { Power: 2 }),
+  duplicatePass({ offset: [-time, 0], multiplier: [5.23, 1], rotation: 0, repeat: 1 }),
+  shaderPass('afterclipGroupWarpMirrorFixedBugs', { Segments: 4 }),
+  duplicatePass({ offset: [0, 0], multiplier: [0.88, 0.88], rotation: 0, repeat: 0 }),
+  shaderPass('afterclipGroupGroupDotWavesCircularDotwaveDotwaveWarp', DOTWAVE_WARP)]
 
 };
 
