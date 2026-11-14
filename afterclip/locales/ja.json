@@ -318,5 +318,32 @@
       "COLORSTEP": "色の段数",
       "MIX": "混合"
     }
+  },
+  "shape-polygon-echo": {
+    "name": "多角形エコー",
+    "text": "多角形エコー 拡大率 x: [SCALE_X] y: [SCALE_Y] 回転: [ROTATION] 色: [COLOR] 不透明度: [OPACITY] 角の数: [N] 星の内側の半径: [STARINNERRADIUS] 大きさ: [SIZE] 大きさ2: [SIZE2] 幅: [WIDTH] 位置 x: [POSITION_X] y: [POSITION_Y] 模様の回転: [PATTERNROTATION] 繰り返し回数: [REPEAT] 余白: [MARGIN] 回転の刻み: [ROTATIONSTEP] 縞の幅: [STRIPEWIDTH] 縞の余白: [STRIPEMARGIN] 縞のずらし: [STRIPEOFFSET] 縞の回転: [STRIPEROTATION] 混合: [MIX] %",
+    "labels": {
+      "SCALE_X": "拡大率x",
+      "SCALE_Y": "拡大率y",
+      "ROTATION": "回転",
+      "COLOR": "色",
+      "OPACITY": "不透明度",
+      "N": "角の数",
+      "STARINNERRADIUS": "星の内側の半径",
+      "SIZE": "大きさ",
+      "SIZE2": "大きさ2",
+      "WIDTH": "幅",
+      "POSITION_X": "位置x",
+      "POSITION_Y": "位置y",
+      "PATTERNROTATION": "模様の回転",
+      "REPEAT": "繰り返し回数",
+      "MARGIN": "余白",
+      "ROTATIONSTEP": "回転の刻み",
+      "STRIPEWIDTH": "縞の幅",
+      "STRIPEMARGIN": "縞の余白",
+      "STRIPEOFFSET": "縞のずらし",
+      "STRIPEROTATION": "縞の回転",
+      "MIX": "混合"
+    }
   }
 }

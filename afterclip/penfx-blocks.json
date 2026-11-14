@@ -1700,6 +1700,170 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "shape-polygon-echo",
+      "name": "Polygon Echo",
+      "text": "polygon echo scale x: [SCALE_X] y: [SCALE_Y] rotation: [ROTATION] color: [COLOR] opacity: [OPACITY] n: [N] star inner radius: [STARINNERRADIUS] size: [SIZE] size2: [SIZE2] width: [WIDTH] position x: [POSITION_X] y: [POSITION_Y] pattern rotation: [PATTERNROTATION] repeat: [REPEAT] margin: [MARGIN] rotation step: [ROTATIONSTEP] stripe width: [STRIPEWIDTH] stripe margin: [STRIPEMARGIN] stripe offset: [STRIPEOFFSET] stripe rotation: [STRIPEROTATION] mix: [MIX] %",
+      "file": "shaders/shape-polygon-echo.glsl",
+      "inputs": [
+        {
+          "id": "SCALE_X",
+          "label": "scale x",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Scale",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "SCALE_Y",
+          "label": "scale y",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Scale",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "ROTATION",
+          "label": "rotation",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Rotation"
+        },
+        {
+          "id": "COLOR",
+          "label": "color",
+          "type": "color",
+          "defaultValue": "#ffffff",
+          "uniform": "u_Color"
+        },
+        {
+          "id": "OPACITY",
+          "label": "opacity",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Opacity"
+        },
+        {
+          "id": "N",
+          "label": "n",
+          "type": "integer",
+          "defaultValue": 4,
+          "uniform": "u_N"
+        },
+        {
+          "id": "STARINNERRADIUS",
+          "label": "star inner radius",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_StarInnerRadius"
+        },
+        {
+          "id": "SIZE",
+          "label": "size",
+          "type": "number",
+          "defaultValue": 20,
+          "uniform": "u_Size"
+        },
+        {
+          "id": "SIZE2",
+          "label": "size2",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Size2"
+        },
+        {
+          "id": "WIDTH",
+          "label": "width",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Width"
+        },
+        {
+          "id": "POSITION_X",
+          "label": "position x",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Position",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "POSITION_Y",
+          "label": "position y",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Position",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "PATTERNROTATION",
+          "label": "pattern rotation",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_PatternRotation"
+        },
+        {
+          "id": "REPEAT",
+          "label": "repeat",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Repeat"
+        },
+        {
+          "id": "MARGIN",
+          "label": "margin",
+          "type": "number",
+          "defaultValue": -5,
+          "uniform": "u_Margin"
+        },
+        {
+          "id": "ROTATIONSTEP",
+          "label": "rotation step",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_RotationStep"
+        },
+        {
+          "id": "STRIPEWIDTH",
+          "label": "stripe width",
+          "type": "number",
+          "defaultValue": 5.86,
+          "uniform": "u_StripeWidth"
+        },
+        {
+          "id": "STRIPEMARGIN",
+          "label": "stripe margin",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_StripeMargin"
+        },
+        {
+          "id": "STRIPEOFFSET",
+          "label": "stripe offset",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_StripeOffset"
+        },
+        {
+          "id": "STRIPEROTATION",
+          "label": "stripe rotation",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_StripeRotation"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }
