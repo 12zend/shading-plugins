@@ -3012,6 +3012,23 @@
           "defaultValue": 100
         }
       ]
+    },
+    {
+      "id": "group-effects-line-waves",
+      "name": "Line Waves",
+      "text": "line waves mix: [MIX] %",
+      "implementation": {
+        "type": "penfx",
+        "opcode": "afterclipGroupEffectsLineWaves"
+      },
+      "inputs": [
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100
+        }
+      ]
     }
   ]
 }

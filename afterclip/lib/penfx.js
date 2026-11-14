@@ -225,6 +225,22 @@ const GROUPS = {
     line([1, 1, 1], 60),
     shaderPass('afterclipGroupRepeatRadialRepeat', { Repeat: 4, Wide: 90, BlendOrder: 1 }, ['BlendOrder'])];
 
+  },
+
+  // Four Waves and a Wave Cut, each keyframed from Time 0 to 1 over 113 frames and started 10 frames apart.
+  afterclipGroupEffectsLineWaves: (args, time) => {
+    const waveTime = index => keyframed(time, [[index * 10, 0, 1], [113 + index * 10, 1, 1]]);
+    const wave = (index, waveColor) => shaderPass('afterclipGroupShapeLineWave', {
+      Time: waveTime(index), Delay: 0.3, Power: 3, Step: 11, StartColor: waveColor, EndColor: waveColor, ColorStep: 1
+    });
+    return [
+    wave(0, [1, 0, 0.666666666666667]),
+    wave(1, [1, 1, 1]),
+    wave(2, [0, 0.6666666666666665, 1]),
+    wave(3, [1, 1, 1]),
+    shaderPass('afterclipGroupShapeLineWaveMask', { Time: waveTime(4), Delay: 0.3, Power: 3, Step: 11 }),
+    duplicatePass({ offset: [-0.5, 0], multiplier: [2, 1], rotation: 0, repeat: 1 })];
+
   }
 
 };

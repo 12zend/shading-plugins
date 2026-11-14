@@ -18,6 +18,8 @@ const GROUP_PROGRAMS = {
     afterclipGroupGroupEffectsBurstTriangleMask: 'shaders/groups/afterclip-group-effects-burst-triangle-mask.glsl',
     afterclipGroupWarpFractalNoise: 'shaders/groups/afterclip-warp-fractal-noise.glsl',
     afterclipGroupGroupEffectsFwLine: 'shaders/groups/afterclip-group-effects-fw-line.glsl',
+    afterclipGroupShapeLineWave: 'shaders/groups/afterclip-shape-line-wave.glsl',
+    afterclipGroupShapeLineWaveMask: 'shaders/groups/afterclip-shape-line-wave-mask.glsl',
     afterclipBuiltinDuplicate: 'shaders/builtins/duplicate.glsl',
     afterclipBuiltinFlip: 'shaders/builtins/flip.glsl',
     afterclipBuiltinFxaa: 'shaders/builtins/fxaa.glsl',

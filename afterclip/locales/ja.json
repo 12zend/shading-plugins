@@ -583,5 +583,12 @@
     "labels": {
       "MIX": "混合"
     }
+  },
+  "group-effects-line-waves": {
+    "name": "ラインウェーブ（プリセット）",
+    "text": "ラインウェーブ（プリセット） 混合: [MIX] %",
+    "labels": {
+      "MIX": "混合"
+    }
   }
 }
