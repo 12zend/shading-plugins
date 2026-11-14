@@ -14,3 +14,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | Block id | Original effect | Original file | Original author |
 | --- | --- | --- | --- |
 | `repeat-circle-dot-wave` | Circle Dot Wave | `plugins/afterclip/shaders/afterclip-repeat-circle-dot-wave.glsl` (`Shaders/Repeat/Circle Dot Wave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `repeat-dot-wave` | Dot Wave | `plugins/afterclip/shaders/afterclip-repeat-dot-wave.glsl` (`Shaders/Repeat/Dot Wave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

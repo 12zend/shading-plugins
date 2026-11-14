@@ -15,5 +15,22 @@
       "COLOR": "色",
       "MIX": "混合"
     }
+  },
+  "repeat-dot-wave": {
+    "name": "ドットウェーブ",
+    "text": "ドットウェーブ 不透明度: [OPACITY] 拡大率 x: [SCALE_X] y: [SCALE_Y] 回転: [ROTATION] 位置 x: [POSITION_X] y: [POSITION_Y] グリッドの大きさ: [GRIDSIZE] ドットの最小サイズ: [BOXSCALEMIN] 最大サイズ: [BOXSCALEMAX] 色: [COLOR] 混合: [MIX] %",
+    "labels": {
+      "OPACITY": "不透明度",
+      "SCALE_X": "拡大率x",
+      "SCALE_Y": "拡大率y",
+      "ROTATION": "回転",
+      "POSITION_X": "位置x",
+      "POSITION_Y": "位置y",
+      "GRIDSIZE": "グリッドの大きさ",
+      "BOXSCALEMIN": "ドットの最小サイズ",
+      "BOXSCALEMAX": "ドットの最大サイズ",
+      "COLOR": "色",
+      "MIX": "混合"
+    }
   }
 }
