@@ -18,3 +18,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `repeat-duplicate-extended` | Duplicate (Extended) | `plugins/afterclip/shaders/afterclip-repeat-duplicate-extended.glsl` (`Shaders/Repeat/Duplicate (Extended).txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `repeat-gradient-linear-repeat` | Gradient Linear Repeat | `plugins/afterclip/shaders/afterclip-repeat-gradient-linear-repeat.glsl` (`Shaders/Repeat/Gradient Linear Repeat.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `repeat-hex-dot-wave` | Hex Dot Wave | `plugins/afterclip/shaders/afterclip-repeat-hex-dot-wave.glsl` (`Shaders/Repeat/Hex Dot Wave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `repeat-linear-repeat` | Linear Repeat | `plugins/afterclip/shaders/afterclip-repeat-linear-repeat.glsl` (`Shaders/Repeat/Linear Repeat.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

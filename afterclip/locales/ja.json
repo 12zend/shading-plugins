@@ -79,5 +79,18 @@
       "COLOR": "色",
       "MIX": "混合"
     }
+  },
+  "repeat-linear-repeat": {
+    "name": "直線リピート",
+    "text": "直線リピート 回転: [ROTATION] ずらし x: [OFFSET_X] y: [OFFSET_Y] 繰り返し回数: [REPEAT] 繰り返しの拡大率: [REPEATSCALE] 重ね順: [BLENDORDER] 混合: [MIX] %",
+    "labels": {
+      "ROTATION": "回転",
+      "OFFSET_X": "ずらしx",
+      "OFFSET_Y": "ずらしy",
+      "REPEAT": "繰り返し回数",
+      "REPEATSCALE": "繰り返しの拡大率",
+      "BLENDORDER": "重ね順",
+      "MIX": "混合"
+    }
   }
 }
