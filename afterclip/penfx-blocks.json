@@ -2413,6 +2413,115 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "warp-fractal-noise",
+      "name": "Fractal Noise",
+      "text": "fractal noise noise position x: [NOISEPOSITION_X] y: [NOISEPOSITION_Y] noise scale x: [NOISESCALE_X] y: [NOISESCALE_Y] step: [STEP] evolution: [EVOLUTION] complexity: [COMPLEXITY] strength: [STRENGTH] angle: [ANGLE] angle noise: [ANGLENOISE] start color: [STARTCOLOR] end color: [ENDCOLOR] mix: [MIX] %",
+      "file": "shaders/warp-fractal-noise.glsl",
+      "separatorBefore": true,
+      "inputs": [
+        {
+          "id": "NOISEPOSITION_X",
+          "label": "noise position x",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_NoisePosition",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "NOISEPOSITION_Y",
+          "label": "noise position y",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_NoisePosition",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "NOISESCALE_X",
+          "label": "noise scale x",
+          "type": "number",
+          "defaultValue": 10,
+          "uniform": "u_NoiseScale",
+          "component": 0,
+          "vectorSize": 2
+        },
+        {
+          "id": "NOISESCALE_Y",
+          "label": "noise scale y",
+          "type": "number",
+          "defaultValue": 10,
+          "uniform": "u_NoiseScale",
+          "component": 1,
+          "vectorSize": 2
+        },
+        {
+          "id": "STEP",
+          "label": "step",
+          "type": "integer",
+          "defaultValue": 0,
+          "uniform": "u_Step"
+        },
+        {
+          "id": "EVOLUTION",
+          "label": "evolution",
+          "type": "number",
+          "defaultValue": 0,
+          "uniform": "u_Evolution"
+        },
+        {
+          "id": "COMPLEXITY",
+          "label": "complexity",
+          "type": "number",
+          "defaultValue": 9.96,
+          "uniform": "u_Complexity"
+        },
+        {
+          "id": "STRENGTH",
+          "label": "strength",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Strength"
+        },
+        {
+          "id": "ANGLE",
+          "label": "angle",
+          "type": "number",
+          "defaultValue": 14.02,
+          "uniform": "u_Angle"
+        },
+        {
+          "id": "ANGLENOISE",
+          "label": "angle noise",
+          "type": "number",
+          "defaultValue": 0.5,
+          "uniform": "u_AngleNoise"
+        },
+        {
+          "id": "STARTCOLOR",
+          "label": "start color",
+          "type": "color",
+          "defaultValue": "#ffffff",
+          "uniform": "u_StartColor"
+        },
+        {
+          "id": "ENDCOLOR",
+          "label": "end color",
+          "type": "color",
+          "defaultValue": "#000000",
+          "uniform": "u_EndColor"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }

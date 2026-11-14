@@ -39,3 +39,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `shape-roundedstar` | RoundedStar | `plugins/afterclip/shaders/afterclip-shape-roundedstar.glsl` (`Shaders/Shape/RoundedStar.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-shockwave` | Shockwave | `plugins/afterclip/shaders/afterclip-shape-shockwave.glsl` (`Shaders/Shape/Shockwave.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `shape-triangle` | Triangle | `plugins/afterclip/shaders/afterclip-shape-triangle.glsl` (`Shaders/Shape/Triangle.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `warp-fractal-noise` | Fractal Noise | `plugins/afterclip/shaders/afterclip-warp-fractal-noise.glsl` (`Shaders/Warp/Fractal Noise.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

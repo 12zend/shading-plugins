@@ -439,5 +439,24 @@
       "GEOMETRYSCALE": "図形の拡大率",
       "MIX": "混合"
     }
+  },
+  "warp-fractal-noise": {
+    "name": "フラクタルノイズ",
+    "text": "フラクタルノイズ ノイズの位置 x: [NOISEPOSITION_X] y: [NOISEPOSITION_Y] ノイズの拡大率 x: [NOISESCALE_X] y: [NOISESCALE_Y] 段数: [STEP] 展開: [EVOLUTION] 複雑さ: [COMPLEXITY] 強さ: [STRENGTH] 角度: [ANGLE] 角度のノイズ: [ANGLENOISE] 開始色: [STARTCOLOR] 終了色: [ENDCOLOR] 混合: [MIX] %",
+    "labels": {
+      "NOISEPOSITION_X": "ノイズの位置x",
+      "NOISEPOSITION_Y": "ノイズの位置y",
+      "NOISESCALE_X": "ノイズの拡大率x",
+      "NOISESCALE_Y": "ノイズの拡大率y",
+      "STEP": "段数",
+      "EVOLUTION": "展開",
+      "COMPLEXITY": "複雑さ",
+      "STRENGTH": "強さ",
+      "ANGLE": "角度",
+      "ANGLENOISE": "角度のノイズ",
+      "STARTCOLOR": "開始色",
+      "ENDCOLOR": "終了色",
+      "MIX": "混合"
+    }
   }
 }
