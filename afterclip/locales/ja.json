@@ -32,5 +32,20 @@
       "COLOR": "色",
       "MIX": "混合"
     }
+  },
+  "repeat-duplicate-extended": {
+    "name": "複製（拡張）",
+    "text": "複製（拡張） ずらし x: [OFFSET_X] y: [OFFSET_Y] 繰り返し方: [REPEATMODE] 回転: [ROTATION] 倍率 x: [MULTIPLIER_X] y: [MULTIPLIER_Y] 基準点 x: [ANCHOR_X] y: [ANCHOR_Y] 混合: [MIX] %",
+    "labels": {
+      "OFFSET_X": "ずらしx",
+      "OFFSET_Y": "ずらしy",
+      "REPEATMODE": "繰り返し方",
+      "ROTATION": "回転",
+      "MULTIPLIER_X": "倍率x",
+      "MULTIPLIER_Y": "倍率y",
+      "ANCHOR_X": "基準点x",
+      "ANCHOR_Y": "基準点y",
+      "MIX": "混合"
+    }
   }
 }
