@@ -44,3 +44,4 @@ The effects in this plugin are ported from [Zoidium](https://github.com/rbstxt/z
 | `warp-mirror-fixed-bugs` | Mirror (Fixed) | `plugins/afterclip/shaders/afterclip-warp-mirror-fixed-bugs.glsl` (`Shaders/Warp/Mirror (Fixed Bugs).txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `warp-polar-coordinates` | Polar Coordinates | `plugins/afterclip/shaders/afterclip-warp-polar-coordinates.glsl` (`Shaders/Warp/Polar Coordinates.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
 | `warp-stretch` | Stretch | `plugins/afterclip/shaders/afterclip-warp-stretch.glsl` (`Shaders/Warp/Stretch.txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |
+| `warp-wavy-extended` | Wavy (Extended) | `plugins/afterclip/shaders/afterclip-warp-wavy-extended.glsl` (`Shaders/Warp/Wavy (Extended).txt`) | AfterClip (Zoidium version: rbstxt / 1zworks) |

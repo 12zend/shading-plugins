@@ -507,5 +507,18 @@
       "STRETCH": "伸ばす量",
       "MIX": "混合"
     }
+  },
+  "warp-wavy-extended": {
+    "name": "波打ち（拡張）",
+    "text": "波打ち（拡張） 時間: [TIME] 量: [AMOUNT] 大きさ: [SIZE] 角度: [ANGLE] ゆがみの角度: [WARPANGLE] 繰り返し回数: [REPEAT] 混合: [MIX] %",
+    "labels": {
+      "TIME": "時間",
+      "AMOUNT": "量",
+      "SIZE": "大きさ",
+      "ANGLE": "角度",
+      "WARPANGLE": "ゆがみの角度",
+      "REPEAT": "繰り返し回数",
+      "MIX": "混合"
+    }
   }
 }

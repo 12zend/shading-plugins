@@ -2749,6 +2749,64 @@
           "uniform": "u_mix"
         }
       ]
+    },
+    {
+      "id": "warp-wavy-extended",
+      "name": "Wavy (Extended)",
+      "text": "wavy (extended) time: [TIME] amount: [AMOUNT] size: [SIZE] angle: [ANGLE] warp angle: [WARPANGLE] repeat: [REPEAT] mix: [MIX] %",
+      "file": "shaders/warp-wavy-extended.glsl",
+      "inputs": [
+        {
+          "id": "TIME",
+          "label": "time",
+          "type": "number",
+          "defaultValue": 3,
+          "uniform": "u_Time"
+        },
+        {
+          "id": "AMOUNT",
+          "label": "amount",
+          "type": "number",
+          "defaultValue": 10,
+          "uniform": "u_Amount"
+        },
+        {
+          "id": "SIZE",
+          "label": "size",
+          "type": "number",
+          "defaultValue": 5,
+          "uniform": "u_Size"
+        },
+        {
+          "id": "ANGLE",
+          "label": "angle",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_Angle"
+        },
+        {
+          "id": "WARPANGLE",
+          "label": "warp angle",
+          "type": "number",
+          "defaultValue": 1,
+          "uniform": "u_WarpAngle"
+        },
+        {
+          "id": "REPEAT",
+          "label": "repeat",
+          "type": "integer",
+          "defaultValue": 2,
+          "uniform": "u_Repeat"
+        },
+        {
+          "id": "MIX",
+          "label": "mix",
+          "type": "number",
+          "defaultValue": 100,
+          "scale": 0.01,
+          "uniform": "u_mix"
+        }
+      ]
     }
   ]
 }
