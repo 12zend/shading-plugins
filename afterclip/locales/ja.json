@@ -345,5 +345,23 @@
       "STRIPEROTATION": "縞の回転",
       "MIX": "混合"
     }
+  },
+  "shape-polygon": {
+    "name": "多角形",
+    "text": "多角形 不透明度: [OPACITY] 拡大率 x: [SCALE_X] y: [SCALE_Y] 回転: [ROTATION] 色: [COLOR] 角の数: [N] 大きさ: [SIZE] 幅: [WIDTH] 位置 x: [POSITION_X] y: [POSITION_Y] 模様の回転: [PATTERNROTATION] 混合: [MIX] %",
+    "labels": {
+      "OPACITY": "不透明度",
+      "SCALE_X": "拡大率x",
+      "SCALE_Y": "拡大率y",
+      "ROTATION": "回転",
+      "COLOR": "色",
+      "N": "角の数",
+      "SIZE": "大きさ",
+      "WIDTH": "幅",
+      "POSITION_X": "位置x",
+      "POSITION_Y": "位置y",
+      "PATTERNROTATION": "模様の回転",
+      "MIX": "混合"
+    }
   }
 }
